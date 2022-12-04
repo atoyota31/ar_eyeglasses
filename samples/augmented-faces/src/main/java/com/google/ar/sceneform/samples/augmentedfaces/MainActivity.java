@@ -36,6 +36,8 @@ public class MainActivity extends AppCompatActivity {
     private ModelRenderable faceModel;
     private final HashMap<AugmentedFace, AugmentedFaceNode> facesNodes = new HashMap<>();
 
+    private String model = "";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,6 +45,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         getSupportFragmentManager().addFragmentOnAttachListener(this::onAttachFragment);
+
+        Bundle bundle = getIntent().getExtras();
+        if (bundle!=null){
+            model = bundle.getString("MODEL");
+        }
 
         if (savedInstanceState == null) {
             if (Sceneform.isSupported(this)) {
@@ -87,7 +94,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void loadModels() {
         loaders.add(ModelRenderable.builder()
-                .setSource(this, Uri.parse("models/glass.glb"))
+                .setSource(this, Uri.parse(model))
                 .setIsFilamentGltf(true)
                 .build()
                 .thenAccept(model -> faceModel = model)
