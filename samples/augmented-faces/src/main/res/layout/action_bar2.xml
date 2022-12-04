@@ -51,7 +51,7 @@
         android:layout_below="@+id/action_bar2_layout1"
         android:layout_width="match_parent"
         android:layout_height="2dp"
-        android:background="#EE03FF"
+        android:background="#FF5722"
         />
 
 </RelativeLayout>

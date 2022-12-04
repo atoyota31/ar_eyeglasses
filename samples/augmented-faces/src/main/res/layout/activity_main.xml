@@ -7,6 +7,29 @@
     <FrameLayout
         android:id="@+id/arFragment"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent" >
+
+        <Button
+            android:id="@+id/style_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="30dp"
+            android:backgroundTint="@color/purple_200"
+            android:text="Style 1" />
+
+        <Button
+            android:id="@+id/style_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="140dp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="30dp"
+            android:backgroundTint="#F44336"
+            android:text="Style 2" />
+
+    </FrameLayout>
+
 
 </FrameLayout>

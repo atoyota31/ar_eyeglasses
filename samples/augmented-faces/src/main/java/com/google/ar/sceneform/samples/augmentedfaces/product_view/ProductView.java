@@ -198,6 +198,11 @@ public class ProductView extends AppCompatActivity {
             intent = new Intent(this, MainActivity.class);
             intent.putExtra("MODEL", "models/glass2.glb");
             startActivity(intent);
+
+        }else if (product_label.equals("BLENDABLE LIP AND CHEEK COLOR ANGEL")){
+            intent = new Intent(this, MainActivity.class);
+            intent.putExtra("MODEL", "models/glass3.glb");
+            startActivity(intent);
         }
 
 //        if (product_label.equals("MAGIC PINK LIP GLOSS")){
