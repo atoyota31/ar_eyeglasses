@@ -1,13 +1,16 @@
 package com.google.ar.sceneform.samples.augmentedfaces;
 
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
+import android.widget.Button;
 
 import com.google.ar.core.AugmentedFace;
 import com.google.ar.sceneform.ArSceneView;
@@ -36,6 +39,9 @@ public class MainActivity extends AppCompatActivity {
     private ModelRenderable faceModel;
     private final HashMap<AugmentedFace, AugmentedFaceNode> facesNodes = new HashMap<>();
 
+    private String model = "";
+    private Button button1, button2;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,6 +49,32 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         getSupportFragmentManager().addFragmentOnAttachListener(this::onAttachFragment);
+
+        Bundle bundle = getIntent().getExtras();
+        if (bundle!=null){
+            model = bundle.getString("MODEL");
+        }
+
+        button1 = findViewById(R.id.style_1);
+        button2 = findViewById(R.id.style_2);
+
+        button1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, MainActivity.class);
+                intent.putExtra("MODEL", "models/glass2.glb");
+                startActivity(intent);
+            }
+        });
+
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, MainActivity.class);
+                intent.putExtra("MODEL", "models/glass3.glb");
+                startActivity(intent);
+            }
+        });
 
         if (savedInstanceState == null) {
             if (Sceneform.isSupported(this)) {
@@ -52,9 +84,10 @@ public class MainActivity extends AppCompatActivity {
             }
         }
 
-        loadModels();
+        loadModels(model);
         loadTextures();
     }
+
 
     public void onAttachFragment(@NonNull FragmentManager fragmentManager, @NonNull Fragment fragment) {
         if (fragment.getId() == R.id.arFragment) {
@@ -85,9 +118,9 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    private void loadModels() {
+    private void loadModels(String glassModel) {
         loaders.add(ModelRenderable.builder()
-                .setSource(this, Uri.parse("models/glass.glb"))
+                .setSource(this, Uri.parse(glassModel))
                 .setIsFilamentGltf(true)
                 .build()
                 .thenAccept(model -> faceModel = model)

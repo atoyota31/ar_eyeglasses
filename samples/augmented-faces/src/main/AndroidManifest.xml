@@ -4,9 +4,9 @@
 
     <!-- Always needed for AR. -->
     <uses-permission android:name="android.permission.CAMERA" />
-
     <!-- Needed to load gltf from network. -->
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <!-- Sceneform requires OpenGLES 3.0 or later. -->
     <uses-feature
@@ -33,7 +33,49 @@
             android:value="required" />
 
         <activity
+            android:name=".form.FormOrder"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".cart.CartItemActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".cart.CartActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".product_details.ProductDetails"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".product_view.ProductView"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".MainActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".product_catalog.ProductCatalog"
             android:configChanges="orientation|screenSize"
             android:exported="true"
             android:label="@string/app_name"
