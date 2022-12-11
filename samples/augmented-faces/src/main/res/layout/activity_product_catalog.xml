@@ -208,7 +208,7 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="300dp"
-                            android:src="@drawable/blendable_lip_angel" />
+                            android:src="@drawable/model_1" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -257,7 +257,7 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="300dp"
-                            android:src="@drawable/blendable_lip_angel" />
+                            android:src="@drawable/model_1" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -306,7 +306,7 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="300dp"
-                            android:src="@drawable/blendable_lip_angel" />
+                            android:src="@drawable/model_1" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -354,7 +354,7 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="300dp"
-                            android:src="@drawable/blendable_lip_angel" />
+                            android:src="@drawable/model_1" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -402,7 +402,7 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="300dp"
-                            android:src="@drawable/blendable_lip_angel" />
+                            android:src="@drawable/model_1" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -450,7 +450,7 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="300dp"
-                            android:src="@drawable/blendable_lip_angel" />
+                            android:src="@drawable/model_1" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -498,7 +498,7 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="300dp"
-                            android:src="@drawable/blendable_lip_angel" />
+                            android:src="@drawable/model_1" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -546,7 +546,7 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="300dp"
-                            android:src="@drawable/blendable_lip_angel" />
+                            android:src="@drawable/model_1" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -594,7 +594,7 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="300dp"
-                            android:src="@drawable/blendable_lip_angel" />
+                            android:src="@drawable/model_1" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -642,7 +642,7 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="300dp"
-                            android:src="@drawable/blendable_lip_angel" />
+                            android:src="@drawable/model_1" />
 
                         <TextView
                             android:layout_width="wrap_content"
