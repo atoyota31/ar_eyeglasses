@@ -24,11 +24,11 @@ public class ProductDetails extends AppCompatActivity{
     public static NotificationBadge prod_details_badge;
 
     private ProductList prod_list = new ProductList();
-    private TextView product_name, product_price, quantity ,total;
+    private TextView product_name, product_price, product_color, quantity ,total;
     private ImageView product_image, title_bar;
     private ImageButton buttonBack, cartIcon;
     //Bundle
-    private String item_name, item_price;
+    private String item_name, item_price, item_color;
     private int item_image;
     //
     private int count_quantity = 1;
@@ -50,6 +50,7 @@ public class ProductDetails extends AppCompatActivity{
         product_image = (ImageView) findViewById(R.id.detailsProductImage);
         product_name = (TextView) findViewById(R.id.detailsProductName);
         product_price = (TextView) findViewById(R.id.detailsProductPrice);
+        product_color = (TextView) findViewById(R.id.detailsProductColor);
         quantity = (TextView) findViewById(R.id.detailsQuantity);
         total = (TextView) findViewById(R.id.detailsTotalPayment);
 
@@ -57,11 +58,13 @@ public class ProductDetails extends AppCompatActivity{
         Bundle bundle = getIntent().getExtras();
         if (bundle!=null){
             item_name = bundle.getString("LABEL");
+            item_color = bundle.getString("COLOR");
             item_price = bundle.getString("PRICE");
             item_image = bundle.getInt("PICTURE");
 
             product_name.setText(item_name);
             product_price.setText(item_price);
+            product_color.setText(item_color);
             product_image.setImageResource(item_image);
 
             price = Double.parseDouble(item_price);
@@ -124,6 +127,7 @@ public class ProductDetails extends AppCompatActivity{
         prod_list.addCartItem(
                 product_name.getText().toString(),
                 product_price.getText().toString(),
+                product_color.getText().toString(),
                 count_quantity,
                 count_total);
 

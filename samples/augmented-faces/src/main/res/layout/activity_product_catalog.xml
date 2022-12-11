@@ -76,7 +76,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="sans-serif-condensed-light"
-                            android:text="Ray-Ban Wayfarer"
+                            android:text="RAY-BAN WAYFARER"
                             android:textColor="@color/black"
                             android:textSize="25dp" />
 
@@ -125,7 +125,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="sans-serif-condensed-light"
-                            android:text="Bose Frames "
+                            android:text="BOSE FRAMES "
                             android:textColor="@color/black"
                             android:textSize="20dp" />
 

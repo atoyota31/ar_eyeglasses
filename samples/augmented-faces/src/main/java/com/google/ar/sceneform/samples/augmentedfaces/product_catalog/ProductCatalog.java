@@ -97,20 +97,20 @@ public class ProductCatalog extends AppCompatActivity implements PopupMenu.OnMen
 
         if (v.getId() == R.id.card_1) {
             intent = new Intent(this, ProductView.class);
-            intent.putExtra("LABEL", "Ray-Ban Wayfarer");
+            intent.putExtra("LABEL", "RAY-BAN WAYFARER");
             intent.putExtra("PRICE", "₱599.99");
-            intent.putExtra("WEIGHT", "Color: Black");
-          intent.putExtra("DETAILS", "Ray-Ban RB2132 901 Black 52 are the new Retro Wingtip design. This updated classic has glossy black finish and classic blue and green color details. If you love Ray-Ban but need a smaller frame, this is the perfect option for you.");
+            intent.putExtra("WEIGHT", "Black");
+            intent.putExtra("DETAILS", "Ray-Ban RB2132 901 Black 52 are the new Retro Wingtip design. This updated classic has glossy black finish and classic blue and green color details. If you love Ray-Ban but need a smaller frame, this is the perfect option for you.");
             intent.putExtra("IMAGE", R.drawable.model_1);
             startActivity(intent);
 
         } else if (v.getId() == R.id.card_2) {
             intent = new Intent(this, ProductView.class);
-            intent.putExtra("LABEL", "Bose Frames");
+            intent.putExtra("LABEL", "BOSE FRAMES");
             intent.putExtra("PRICE", "₱499.99");
             intent.putExtra("WEIGHT", "Color: Black");
             intent.putExtra("DETAILS", "Bose Frames 901 Black are the new Retro Wingtip design. This updated classic has glossy black finish and classic blue and green color details. If you love Bose Frames but need a smaller frame, this is the perfect option for you.");
-            intent.putExtra("IMAGE", R.drawable.glass2_model);
+            intent.putExtra("IMAGE", R.drawable.blendable_lip_angel);
             startActivity(intent);
         } else if (v.getId() == R.id.card_3) {
             intent = new Intent(this, ProductView.class);
@@ -118,7 +118,7 @@ public class ProductCatalog extends AppCompatActivity implements PopupMenu.OnMen
             intent.putExtra("PRICE", "₱799.99");
             intent.putExtra("WEIGHT", "Color: Gold");
             intent.putExtra("DETAILS", "VINTAGE WIRE ROUND RIM GLASSES Gold are the new Retro Wingtip design. This updated classic has glossy black finish and classic blue and green color details. If you love VINTAGE WIRE ROUND RIM GLASSES but need a smaller frame, this is the perfect option for you.");
-            intent.putExtra("IMAGE", R.drawable.model_3);
+            intent.putExtra("IMAGE", R.drawable.blendable_lip_angel);
             startActivity(intent);
 
 

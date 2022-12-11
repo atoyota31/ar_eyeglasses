@@ -1,4 +1,6 @@
 package com.google.ar.sceneform.samples.augmentedfaces.product_view;
+import androidx.appcompat.app.AppCompatActivity;
+import com.google.ar.sceneform.samples.augmentedfaces.R;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,17 +9,16 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-import com.google.ar.sceneform.samples.augmentedfaces.R;
-import com.google.ar.sceneform.samples.augmentedfaces.cart.CartActivity;
-import com.google.ar.sceneform.samples.augmentedfaces.product.service.ProductList;
 import com.google.ar.sceneform.samples.augmentedfaces.product_catalog.ProductCatalog;
 import com.google.ar.sceneform.samples.augmentedfaces.product_details.ProductDetails;
-import com.nex3z.notificationbadge.NotificationBadge;
+import com.google.ar.sceneform.samples.augmentedfaces.cart.CartActivity;
+import com.google.ar.sceneform.samples.augmentedfaces.product.service.ProductList;
 import com.google.ar.sceneform.samples.augmentedfaces.MainActivity;
+import com.nex3z.notificationbadge.NotificationBadge;
+
 
 public class ProductView extends AppCompatActivity {
+
     public static NotificationBadge prod_view_badge;
     private ProductList prod_list = new ProductList();
     private ImageButton buttonBack, cartIcon;
@@ -92,25 +93,26 @@ public class ProductView extends AppCompatActivity {
 
     public void Buy(View v) {
 
-        if (product_label.equals("Ray-Ban Wayfarer")){
+        if (product_label.equals("RAY-BAN WAYFARER")){
             intent = new Intent(this, ProductDetails.class);
-            intent.putExtra("LABEL", "Ray-Ban Wayfarer");
+            intent.putExtra("LABEL", "RAY-BAN WAYFARER");
+            intent.putExtra("COLOR", "Black");
             intent.putExtra("PRICE", "599.99");
             intent.putExtra("PICTURE", R.drawable.model_1);
             startActivity(intent);
 
-        }else if (product_label.equals("Bose Frames")){
+        }else if (product_label.equals("BLENDABLE LIP AND CHEEK COLOR")){
             intent = new Intent(this, ProductDetails.class);
-            intent.putExtra("LABEL", "BOSE FRAMES");
-            intent.putExtra("PRICE", "499.99");
-            intent.putExtra("PICTURE", R.drawable.glass2_model);
+            intent.putExtra("LABEL", "BLENDABLE LIP AND CHEEK COLOR");
+            intent.putExtra("PRICE", "81.40");
+            intent.putExtra("PICTURE", R.drawable.blendable_lip_angel);
             startActivity(intent);
 
-        }else if (product_label.equals("VINTAGE WIRE ROUND RIM GLASSES")){
+        }else if (product_label.equals("BLENDABLE LIP AND CHEEK COLOR ANGEL")){
             intent = new Intent(this, ProductDetails.class);
-            intent.putExtra("LABEL", "VINTAGE WIRE ROUND RIM GLASSES");
-            intent.putExtra("PRICE", "799.99");
-            intent.putExtra("PICTURE", R.drawable.model_3);
+            intent.putExtra("LABEL", "BLENDABLE LIP AND CHEEK COLOR ANGEL");
+            intent.putExtra("PRICE", "81.40");
+            intent.putExtra("PICTURE", R.drawable.blendable_lip_angel);
             startActivity(intent);
 
         }else if (product_label.equals("METALLIC PRO LIPSTICK")){
@@ -189,100 +191,26 @@ public class ProductView extends AppCompatActivity {
 
     public void Try(View v){
 
-        if (product_label.equals("Ray-Ban Wayfarer")){
+        if (product_label.equals("MAGIC PINK LIP GLOSS")){
             intent = new Intent(this, MainActivity.class);
+            intent.putExtra("LABEL", "MAGIC PINK LIP GLOSS");
             intent.putExtra("MODEL", "models/glass.glb");
             startActivity(intent);
 
-        }else if (product_label.equals("Bose Frames")){
+        }else if (product_label.equals("BLENDABLE LIP AND CHEEK COLOR")){
             intent = new Intent(this, MainActivity.class);
-            intent.putExtra("MODEL", "models/glass2.glb");
+            intent.putExtra("LABEL", "BLENDABLE LIP AND CHEEK COLOR");
+            intent.putExtra("MODEL", "models/glass.glb");
             startActivity(intent);
 
-        }else if (product_label.equals("VINTAGE WIRE ROUND RIM GLASSES")){
+        }else if (product_label.equals("BLENDABLE LIP AND CHEEK COLOR ANGEL")){
             intent = new Intent(this, MainActivity.class);
-            intent.putExtra("MODEL", "models/glass3.glb");
+            intent.putExtra("LABEL", "BLENDABLE LIP AND CHEEK COLOR ANGEL");
+            intent.putExtra("MODEL", "models/glass.glb");
             startActivity(intent);
+
         }
-
-//        if (product_label.equals("MAGIC PINK LIP GLOSS")){
-//            intent = new Intent(this, MainActivity.class);
-//            intent.putExtra("LABEL", "MAGIC PINK LIP GLOSS");
-//            intent.putExtra("MAKEUP", R.drawable.makeup_5);
-//            startActivity(intent);
-//
-//        }else if (product_label.equals("BLENDABLE LIP AND CHEEK COLOR")){
-//            intent = new Intent(this, MainActivity.class);
-//            intent.putExtra("LABEL", "BLENDABLE LIP AND CHEEK COLOR");
-//            intent.putExtra("MAKEUP", R.drawable.makeup_5);
-//            startActivity(intent);
-//
-//        }else if (product_label.equals("BLENDABLE LIP AND CHEEK COLOR ANGEL")){
-//            intent = new Intent(this, MainActivity.class);
-//            intent.putExtra("LABEL", "BLENDABLE LIP AND CHEEK COLOR ANGEL");
-//            intent.putExtra("MAKEUP", R.drawable.makeup_5);
-//            startActivity(intent);
-//
-//        }else if (product_label.equals("METALLIC PRO LIPSTICK")){
-//            intent = new Intent(this, MainActivity.class);
-//            intent.putExtra("LABEL", "METALLIC PRO LIPSTICK");
-//            intent.putExtra("MAKEUP", R.drawable.makeup_5);
-//            startActivity(intent);
-//
-//        }else if (product_label.equals("MATTE PRO LIPSTICK")){
-//            intent = new Intent(this, MainActivity.class);
-//            intent.putExtra("LABEL", "MATTE PRO LIPSTICK");
-//            intent.putExtra("MAKEUP", R.drawable.makeup_5);
-//            startActivity(intent);
-//
-//        }else if (product_label.equals("MATTE PRO LIPSTICK BLITZ")){
-//            intent = new Intent(this, MainActivity.class);
-//            intent.putExtra("LABEL", "MATTE PRO LIPSTICK BLITZ");
-//            intent.putExtra("MAKEUP", R.drawable.makeup_5);
-//            startActivity(intent);
-//
-//        }else if (product_label.equals("LIP GLOSS")){
-//            intent = new Intent(this, MainActivity.class);
-//            intent.putExtra("LABEL", "LIP GLOSS");
-//            intent.putExtra("MAKEUP", R.drawable.makeup_5);
-//            startActivity(intent);
-//
-//        }else if (product_label.equals("LIP CHEEK EYE COLOR")){
-//            intent = new Intent(this, MainActivity.class);
-//            intent.putExtra("LABEL", "LIP CHEEK EYE COLOR");
-//            intent.putExtra("MAKEUP", R.drawable.makeup_5);
-//            startActivity(intent);
-//
-//        }else if (product_label.equals("LONG LASTING METALLIC LIP COLOR")) {
-//            intent = new Intent(this, MainActivity.class);
-//            intent.putExtra("LABEL", "LONG LASTING METALLIC LIP COLOR");
-//            intent.putExtra("MAKEUP", R.drawable.makeup_5);
-//            startActivity(intent);
-//
-//        }else if (product_label.equals("LONG LASTING LIP COLOR")){
-//            intent = new Intent(this, MainActivity.class);
-//            intent.putExtra("LABEL", "LONG LASTING LIP COLOR");
-//            intent.putExtra("MAKEUP", R.drawable.makeup_5);
-//            startActivity(intent);
-//
-//        }else if (product_label.equals("CLASSIQUE LIPSTICK")){
-//            intent = new Intent(this, MainActivity.class);
-//            intent.putExtra("LABEL", "CLASSIQUE LIPSTICK");
-//            intent.putExtra("MAKEUP", R.drawable.makeup_5);
-//            startActivity(intent);
-//
-//        }else if (product_label.equals("METALLIC PRO LIPSTICK HOLLYWOOD")){
-//            intent = new Intent(this, MainActivity.class);
-//            intent.putExtra("LABEL", "METALLIC PRO LIPSTICK HOLLYWOOD");
-//            intent.putExtra("MAKEUP", R.drawable.makeup_5);
-//            startActivity(intent);
-//
-//        }else if (product_label.equals("MAGIC PINK LIP GLOSS - 5 PCS BUNDLE")){
-//            intent = new Intent(this, MainActivity.class);
-//            intent.putExtra("LABEL", "MAGIC PINK LIP GLOSS - 5 PCS BUNDLE");
-//            intent.putExtra("MAKEUP", R.drawable.makeup_5);
-//            startActivity(intent);
-//
-//        }
     }
+
+
 }

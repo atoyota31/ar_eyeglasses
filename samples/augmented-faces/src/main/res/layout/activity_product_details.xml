@@ -38,7 +38,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-condensed-light"
                     android:gravity="center"
-                    android:text="ORDER EYEGLASSES"
+                    android:text="SAMPLE LIPSTICK"
                     android:textColor="@color/black"
                     android:textSize="20dp" />
 
@@ -49,7 +49,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="200dp"
                     android:layout_below="@id/detailsProductName"
-                    android:layout_marginTop="18dp"
+                    android:layout_marginTop="20dp"
                     android:gravity="center"
                     android:src="@drawable/empty_glass" />
 
@@ -78,23 +78,47 @@
                         android:textColor="@color/black"
                         android:textSize="20dp" />
 
-                    //Product Quantity
+
+                    //Product Color
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_below="@id/detailsProductPrice"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="Color"
+                        android:textColor="@color/black"
+                        android:textSize="20dp" />
 
                     <TextView
+                        android:id="@+id/detailsProductColor"
+                        android:layout_below="@id/detailsProductPrice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:gravity="right"
+                        android:text="----"
+                        android:textColor="@color/black"
+                        android:textSize="20dp" />
+
+
+                    //Product Quantity
+                    <TextView
+                        android:layout_below="@+id/detailsProductColor"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="70dp"
+                        android:layout_marginTop="15dp"
                         android:text="Quantity"
                         android:textColor="@color/black"
                         android:textSize="20dp" />
 
 
                     //Quantity
-
                     <RelativeLayout
+                        android:id="@+id/quantity"
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
-                        android:layout_below="@+id/detailsProductPrice"
+                        android:layout_marginTop="15dp"
+                        android:layout_below="@+id/detailsProductColor"
                         android:gravity="right">
 
                         <ImageButton
@@ -130,16 +154,15 @@
 
 
                     //Divider
-
                     <View
+                        android:layout_below="@+id/quantity"
                         android:id="@+id/divider"
                         android:layout_width="wrap_content"
                         android:layout_height="1dp"
-                        android:layout_marginTop="120dp"
+                        android:layout_marginTop="15dp"
                         android:background="@color/black" />
 
                     //Total Price
-
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
