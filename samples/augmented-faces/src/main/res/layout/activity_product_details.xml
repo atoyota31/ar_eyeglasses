@@ -38,7 +38,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-condensed-light"
                     android:gravity="center"
-                    android:text="SAMPLE LIPSTICK"
+                    android:text="ORDER EYEGLASSES"
                     android:textColor="@color/black"
                     android:textSize="20dp" />
 
@@ -49,9 +49,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="200dp"
                     android:layout_below="@id/detailsProductName"
-                    android:layout_marginTop="20dp"
+                    android:layout_marginTop="18dp"
                     android:gravity="center"
-                    android:src="@drawable/lipstick_empty" />
+                    android:src="@drawable/empty_glass" />
 
                 <RelativeLayout
                     android:layout_width="match_parent"

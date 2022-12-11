@@ -92,25 +92,25 @@ public class ProductView extends AppCompatActivity {
 
     public void Buy(View v) {
 
-        if (product_label.equals("MAGIC PINK LIP GLOSS")){
+        if (product_label.equals("Ray-Ban Wayfarer")){
             intent = new Intent(this, ProductDetails.class);
-            intent.putExtra("LABEL", "MAGIC PINK LIP GLOSS");
-            intent.putExtra("PRICE", "75.90");
-            intent.putExtra("PICTURE", R.drawable.blendable_lip_angel);
+            intent.putExtra("LABEL", "Ray-Ban Wayfarer");
+            intent.putExtra("PRICE", "599.99");
+            intent.putExtra("PICTURE", R.drawable.model_1);
             startActivity(intent);
 
-        }else if (product_label.equals("BLENDABLE LIP AND CHEEK COLOR")){
+        }else if (product_label.equals("Bose Frames")){
             intent = new Intent(this, ProductDetails.class);
-            intent.putExtra("LABEL", "BLENDABLE LIP AND CHEEK COLOR");
-            intent.putExtra("PRICE", "81.40");
-            intent.putExtra("PICTURE", R.drawable.blendable_lip_angel);
+            intent.putExtra("LABEL", "BOSE FRAMES");
+            intent.putExtra("PRICE", "499.99");
+            intent.putExtra("PICTURE", R.drawable.glass2_model);
             startActivity(intent);
 
-        }else if (product_label.equals("BLENDABLE LIP AND CHEEK COLOR ANGEL")){
+        }else if (product_label.equals("VINTAGE WIRE ROUND RIM GLASSES")){
             intent = new Intent(this, ProductDetails.class);
-            intent.putExtra("LABEL", "BLENDABLE LIP AND CHEEK COLOR ANGEL");
-            intent.putExtra("PRICE", "81.40");
-            intent.putExtra("PICTURE", R.drawable.blendable_lip_angel);
+            intent.putExtra("LABEL", "VINTAGE WIRE ROUND RIM GLASSES");
+            intent.putExtra("PRICE", "799.99");
+            intent.putExtra("PICTURE", R.drawable.model_3);
             startActivity(intent);
 
         }else if (product_label.equals("METALLIC PRO LIPSTICK")){
@@ -189,17 +189,17 @@ public class ProductView extends AppCompatActivity {
 
     public void Try(View v){
 
-        if (product_label.equals("MAGIC PINK LIP GLOSS")){
+        if (product_label.equals("Ray-Ban Wayfarer")){
             intent = new Intent(this, MainActivity.class);
             intent.putExtra("MODEL", "models/glass.glb");
             startActivity(intent);
 
-        }else if (product_label.equals("BLENDABLE LIP AND CHEEK COLOR")){
+        }else if (product_label.equals("Bose Frames")){
             intent = new Intent(this, MainActivity.class);
             intent.putExtra("MODEL", "models/glass2.glb");
             startActivity(intent);
 
-        }else if (product_label.equals("BLENDABLE LIP AND CHEEK COLOR ANGEL")){
+        }else if (product_label.equals("VINTAGE WIRE ROUND RIM GLASSES")){
             intent = new Intent(this, MainActivity.class);
             intent.putExtra("MODEL", "models/glass3.glb");
             startActivity(intent);

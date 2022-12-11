@@ -97,28 +97,28 @@ public class ProductCatalog extends AppCompatActivity implements PopupMenu.OnMen
 
         if (v.getId() == R.id.card_1) {
             intent = new Intent(this, ProductView.class);
-            intent.putExtra("LABEL", "MAGIC PINK LIP GLOSS");
-            intent.putExtra("PRICE", "₱75.90");
-            intent.putExtra("WEIGHT", "• 3g");
-            intent.putExtra("DETAILS", "Magic Pink Lip Gloss has the magic touch that turns your lips naturally pink. Perfect to keep your lips looking fresh and healthy throughout the day.");
-            intent.putExtra("IMAGE", R.drawable.blendable_lip_angel);
+            intent.putExtra("LABEL", "Ray-Ban Wayfarer");
+            intent.putExtra("PRICE", "₱599.99");
+            intent.putExtra("WEIGHT", "Color: Black");
+          intent.putExtra("DETAILS", "Ray-Ban RB2132 901 Black 52 are the new Retro Wingtip design. This updated classic has glossy black finish and classic blue and green color details. If you love Ray-Ban but need a smaller frame, this is the perfect option for you.");
+            intent.putExtra("IMAGE", R.drawable.model_1);
             startActivity(intent);
 
         } else if (v.getId() == R.id.card_2) {
             intent = new Intent(this, ProductView.class);
-            intent.putExtra("LABEL", "BLENDABLE LIP AND CHEEK COLOR");
-            intent.putExtra("PRICE", "₱81.10");
-            intent.putExtra("WEIGHT", "• 3g");
-            intent.putExtra("DETAILS", "Match your lipstick shade with your blush with this 2-in-1 wonder! The formula is creamy and smooth that it can create an intense color on your lips yet it is so easy to blend on your cheek for a beautiful blush. It is also enriched with Olive oil which is a known natural moisturizer.");
-            intent.putExtra("IMAGE", R.drawable.blendable_lip_angel);
+            intent.putExtra("LABEL", "Bose Frames");
+            intent.putExtra("PRICE", "₱499.99");
+            intent.putExtra("WEIGHT", "Color: Black");
+            intent.putExtra("DETAILS", "Bose Frames 901 Black are the new Retro Wingtip design. This updated classic has glossy black finish and classic blue and green color details. If you love Bose Frames but need a smaller frame, this is the perfect option for you.");
+            intent.putExtra("IMAGE", R.drawable.glass2_model);
             startActivity(intent);
         } else if (v.getId() == R.id.card_3) {
             intent = new Intent(this, ProductView.class);
-            intent.putExtra("LABEL", "BLENDABLE LIP AND CHEEK COLOR ANGEL");
-            intent.putExtra("PRICE", "₱81.40");
-            intent.putExtra("WEIGHT", "• 3g");
-            intent.putExtra("DETAILS", "Now you can have matching shade for your lips and cheeks. This multipurpose product can be used as lipstick as well as blusher. The formula is creamy and smooth that it can create an intense color on your lips yet it is so easy to blend on your cheek for a beautiful blush. It is enriched with Olive oil which is known as natural moisturizer.");
-            intent.putExtra("IMAGE", R.drawable.blendable_lip_angel);
+            intent.putExtra("LABEL", "VINTAGE WIRE ROUND RIM GLASSES");
+            intent.putExtra("PRICE", "₱799.99");
+            intent.putExtra("WEIGHT", "Color: Gold");
+            intent.putExtra("DETAILS", "VINTAGE WIRE ROUND RIM GLASSES Gold are the new Retro Wingtip design. This updated classic has glossy black finish and classic blue and green color details. If you love VINTAGE WIRE ROUND RIM GLASSES but need a smaller frame, this is the perfect option for you.");
+            intent.putExtra("IMAGE", R.drawable.model_3);
             startActivity(intent);
 
 

@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, MainActivity.class);
-                intent.putExtra("MODEL", "models/glass2.glb");
+                intent.putExtra("MODEL", "models/glass_blue.glb");
                 startActivity(intent);
             }
         });
@@ -71,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, MainActivity.class);
-                intent.putExtra("MODEL", "models/glass3.glb");
+                intent.putExtra("MODEL", "models/glass_green.glb");
                 startActivity(intent);
             }
         });
