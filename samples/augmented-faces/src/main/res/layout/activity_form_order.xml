@@ -27,7 +27,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="ORDER DETAILS"
-                android:textColor="#EE03FF"
+                android:textColor="#FF5722"
                 android:textSize="20dp"
                 android:textStyle="bold" />
 
@@ -249,12 +249,11 @@
                 android:id="@+id/form_PlaceOrder"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:backgroundTint="#FF5722"
                 android:text="Place Order"
                 android:textAllCaps="false"
-                android:textStyle="bold"
                 android:textColor="@color/white"
-                android:backgroundTint="#EE00FF"
-                />
+                android:textStyle="bold" />
         </RelativeLayout>
     </RelativeLayout>
 

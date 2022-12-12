@@ -1,10 +1,13 @@
 package com.google.ar.sceneform.samples.augmentedfaces.cart;
 
+import androidx.appcompat.app.AppCompatActivity;
+import com.google.ar.sceneform.samples.augmentedfaces.R;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
+//import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
@@ -13,13 +16,11 @@ import android.widget.RelativeLayout;
 import android.widget.SimpleAdapter;
 import android.widget.TextView;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-import com.google.ar.sceneform.samples.augmentedfaces.R;
 import com.google.ar.sceneform.samples.augmentedfaces.form.FormOrder;
 import com.google.ar.sceneform.samples.augmentedfaces.product.Product;
-import com.google.ar.sceneform.samples.augmentedfaces.product.service.ProductList;
 import com.google.ar.sceneform.samples.augmentedfaces.product_catalog.ProductCatalog;
+import com.google.ar.sceneform.samples.augmentedfaces.product.service.ProductList;
+
 import com.nex3z.notificationbadge.NotificationBadge;
 
 import java.text.DecimalFormat;
@@ -82,12 +83,12 @@ public class CartActivity extends AppCompatActivity {
         }
 
         //Adapter 1
-        ArrayAdapter arrayAdapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, prod_list.getItem());
+//        ArrayAdapter arrayAdapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, prod_list.getItem());
 
         mySimpleList = new ArrayList<>();
         prod_list.createList();
-        String [] from = {"photo","name", "price", "quantity", "total" };
-        int [] to = {R.id.list_itemPhoto, R.id.list_itemName, R.id.list_itemPrice, R.id.list_itemQuantity, R.id.list_itemTotal };
+        String [] from = {"photo","name", "price", "color", "quantity", "total" };
+        int [] to = {R.id.list_itemPhoto, R.id.list_itemName, R.id.list_itemPrice, R.id.list_itemColor, R.id.list_itemQuantity, R.id.list_itemTotal };
         //Adapter2
         SimpleAdapter simpleAdapter = new SimpleAdapter(getBaseContext(), mySimpleList, R.layout.listview_design, from, to);
 
@@ -119,11 +120,12 @@ public class CartActivity extends AppCompatActivity {
                 for (Product myList : prod_list.list) {
                     if (position == item_position){
 
-                        if (myList.name.equals("MAGIC PINK LIP GLOSS")){
+                        if (myList.name.equals("RAY-BAN WAYFARER")){
                             Intent intent = new Intent(CartActivity.this, CartItemActivity.class);
-                            intent.putExtra("PICTURE", R.drawable.blendable_lip_angel);
+                            intent.putExtra("PICTURE", R.drawable.model_1);
                             intent.putExtra("NAME", myList.name);
                             intent.putExtra("PRICE", myList.price);
+                            intent.putExtra("COLOR", myList.color);
                             intent.putExtra("QUANTITY", myList.quantity);
                             intent.putExtra("TOTAL", myList.total);
                             startActivity(intent);
@@ -274,5 +276,6 @@ public class CartActivity extends AppCompatActivity {
 
         cartBadge = (NotificationBadge) findViewById(R.id.catalog_cart_badge);
         cartBadge.setVisibility(View.INVISIBLE);
+
     }
 }

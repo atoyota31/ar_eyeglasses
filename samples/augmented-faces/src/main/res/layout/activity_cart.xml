@@ -12,26 +12,25 @@
 
     <TextView
         android:id="@+id/cart_title"
-        android:layout_below="@+id/action_bar2_layout"
-        android:layout_width="match_parent"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/action_bar2_layout"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="10dp"
         android:layout_marginRight="20dp"
         android:text="SHOPPING CART"
-        android:textAlignment="center"
-        android:textColor="#EE03FF"
+        android:gravity="center"
+        android:textColor="#FF5722"
         android:textSize="20dp"
         android:textStyle="bold" />
 
     <ListView
         android:id="@+id/cart_list"
-        android:layout_below="@+id/cart_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/cart_title"
         android:layout_marginTop="50dp"
-        android:layout_marginBottom="80dp"
-        />
+        android:layout_marginBottom="80dp" />
 
     <TextView
         android:id="@+id/cart_message"
@@ -102,11 +101,12 @@
                 android:id="@+id/cart_CheckOut"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:backgroundTint="#EE00FF"
+                android:backgroundTint="#FF5722"
                 android:text="Place Order"
                 android:textAllCaps="false"
                 android:textColor="@color/white"
                 android:textStyle="bold" />
+
         </RelativeLayout>
     </RelativeLayout>
 </RelativeLayout>

@@ -26,12 +26,13 @@ public class ProductList {
 
     private static final DecimalFormat df = new DecimalFormat(",###.00");
 
-    public void addCartItem(String name, String price, int quantity, double total){
+    public void addCartItem(String name, String price, String color, int quantity, double total){
         if (list.isEmpty()){
             //Get the Array if Empty because the loop won't work if empty.
             list.add(new Product(
                     name,
                     price,
+                    color,
                     quantity,
                     total)
             );
@@ -56,6 +57,7 @@ public class ProductList {
             list.add(getIndex, new Product(
                     name,
                     price,
+                    color,
                     quantity + previous_quantity,
                     total + previous_total)
             );
@@ -105,11 +107,12 @@ public class ProductList {
     public void createList() {
         for (Product myList : list) {
 
-            if (myList.name.equals("MAGIC PINK LIP GLOSS")){
+            if (myList.name.equals("RAY-BAN WAYFARER")){
                 Map<String, Object> listView = new HashMap<>();
-                listView.put("photo", R.drawable.blendable_lip_angel);
+                listView.put("photo", R.drawable.model_1);
                 listView.put("name", "Name: " + myList.name);
                 listView.put("price", "Price: ₱" +myList.price);
+                listView.put("color", "Color: " +myList.color);
                 if (myList.quantity>1){
                     listView.put("quantity", "Quantity: " +myList.quantity+"pcs");
                 }else{
