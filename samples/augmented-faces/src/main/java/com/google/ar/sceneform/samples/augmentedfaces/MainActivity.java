@@ -47,32 +47,31 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_main);
-
-        getSupportFragmentManager().addFragmentOnAttachListener(this::onAttachFragment);
+        button1 = findViewById(R.id.style_1);
+        button2 = findViewById(R.id.style_2);
 
         Bundle bundle = getIntent().getExtras();
         if (bundle!=null){
             model = bundle.getString("MODEL");
         }
 
-        button1 = findViewById(R.id.style_1);
-        button2 = findViewById(R.id.style_2);
+        getSupportFragmentManager().addFragmentOnAttachListener(this::onAttachFragment);
+        loadModels(model);
+        loadTextures();
 
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, MainActivity.class);
-                intent.putExtra("MODEL", "models/glass_blue.glb");
-                startActivity(intent);
+                finish();
+                startActivity(getIntent().putExtra("MODEL", "models/glass_blue.glb"));
             }
         });
 
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, MainActivity.class);
-                intent.putExtra("MODEL", "models/glass_green.glb");
-                startActivity(intent);
+                finish();
+                startActivity(getIntent().putExtra("MODEL", "models/glass_green.glb"));
             }
         });
 
@@ -83,9 +82,6 @@ public class MainActivity extends AppCompatActivity {
                         .commit();
             }
         }
-
-        loadModels(model);
-        loadTextures();
     }
 
 
@@ -107,10 +103,18 @@ public class MainActivity extends AppCompatActivity {
         arFragment.setOnAugmentedFaceUpdateListener(this::onAugmentedFaceTrackingUpdate);
     }
 
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
+//    @Override
+//    protected void onDestroy() {
+//        super.onDestroy();
+//        for (CompletableFuture<?> loader : loaders) {
+//            if (!loader.isDone()) {
+//                loader.cancel(true);
+//            }
+//        }
+//    }
 
+    public void onDestroy() {
+        super.onDestroy();
         for (CompletableFuture<?> loader : loaders) {
             if (!loader.isDone()) {
                 loader.cancel(true);
@@ -120,26 +124,27 @@ public class MainActivity extends AppCompatActivity {
 
     private void loadModels(String glassModel) {
         loaders.add(ModelRenderable.builder()
-                .setSource(this, Uri.parse(glassModel))
-                .setIsFilamentGltf(true)
-                .build()
-                .thenAccept(model -> faceModel = model)
-                .exceptionally(throwable -> {
-                    Toast.makeText(this, "Unable to load renderable", Toast.LENGTH_LONG).show();
-                    return null;
-                }));
+            .setSource(this, Uri.parse(glassModel))
+            .setIsFilamentGltf(true)
+            .build()
+            .thenAccept(model -> faceModel = model)
+            .exceptionally(throwable -> {
+                Toast.makeText(this, "Unable to load renderable", Toast.LENGTH_LONG).show();
+                return null;
+            }));
     }
+
 
     private void loadTextures() {
         loaders.add(Texture.builder()
-                .setSource(this, Uri.parse("textures/freckles.png"))
-                .setUsage(Texture.Usage.COLOR_MAP)
-                .build()
-                .thenAccept(texture -> faceTexture = texture)
-                .exceptionally(throwable -> {
-                    Toast.makeText(this, "Unable to load texture", Toast.LENGTH_LONG).show();
-                    return null;
-                }));
+            .setSource(this, Uri.parse("textures/freckles.png"))
+            .setUsage(Texture.Usage.COLOR_MAP)
+            .build()
+            .thenAccept(texture -> faceTexture = texture)
+            .exceptionally(throwable -> {
+                Toast.makeText(this, "Unable to load texture", Toast.LENGTH_LONG).show();
+                return null;
+            }));
     }
 
     public void onAugmentedFaceTrackingUpdate(AugmentedFace augmentedFace) {
