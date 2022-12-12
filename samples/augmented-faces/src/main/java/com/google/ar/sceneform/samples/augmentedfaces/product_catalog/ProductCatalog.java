@@ -110,9 +110,57 @@ public class ProductCatalog extends AppCompatActivity implements PopupMenu.OnMen
             intent.putExtra("PRICE", "₱499.99");
             intent.putExtra("WEIGHT", "Color: Black");
             intent.putExtra("DETAILS", "Bose Frames 901 Black are the new Retro Wingtip design. This updated classic has glossy black finish and classic blue and green color details. If you love Bose Frames but need a smaller frame, this is the perfect option for you.");
-            intent.putExtra("IMAGE", R.drawable.model_1);
+            intent.putExtra("IMAGE", R.drawable.glass2_model);
             startActivity(intent);
         } else if (v.getId() == R.id.card_3) {
+            intent = new Intent(this, ProductView.class);
+            intent.putExtra("LABEL", "VINTAGE WIRE ROUND RIM GLASSES");
+            intent.putExtra("PRICE", "₱799.99");
+            intent.putExtra("WEIGHT", "Color: Gold");
+            intent.putExtra("DETAILS", "VINTAGE WIRE ROUND RIM GLASSES Gold are the new Retro Wingtip design. This updated classic has glossy black finish and classic blue and green color details. If you love VINTAGE WIRE ROUND RIM GLASSES but need a smaller frame, this is the perfect option for you.");
+            intent.putExtra("IMAGE", R.drawable.model_3);
+            startActivity(intent);
+
+
+        } else if (v.getId() == R.id.card_4) {
+            intent = new Intent(this, ProductView.class);
+            intent.putExtra("LABEL", "RAY-BAN WAYFARER");
+            intent.putExtra("PRICE", "₱599.99");
+            intent.putExtra("WEIGHT", "Black");
+            intent.putExtra("DETAILS", "Ray-Ban RB2132 901 Black 52 are the new Retro Wingtip design. This updated classic has glossy black finish and classic blue and green color details. If you love Ray-Ban but need a smaller frame, this is the perfect option for you.");
+            intent.putExtra("IMAGE", R.drawable.model_1);
+            startActivity(intent);
+
+
+        } else if (v.getId() == R.id.card_5) {
+            intent = new Intent(this, ProductView.class);
+            intent.putExtra("LABEL", "BOSE FRAMES");
+            intent.putExtra("PRICE", "₱499.99");
+            intent.putExtra("WEIGHT", "Color: Black");
+            intent.putExtra("DETAILS", "Bose Frames 901 Black are the new Retro Wingtip design. This updated classic has glossy black finish and classic blue and green color details. If you love Bose Frames but need a smaller frame, this is the perfect option for you.");
+            intent.putExtra("IMAGE", R.drawable.model_1);
+            startActivity(intent);
+
+
+        } else if (v.getId() == R.id.card_6) {
+            intent = new Intent(this, ProductView.class);
+            intent.putExtra("LABEL", "RAY-BAN WAYFARER");
+            intent.putExtra("PRICE", "₱599.99");
+            intent.putExtra("WEIGHT", "Black");
+            intent.putExtra("DETAILS", "Ray-Ban RB2132 901 Black 52 are the new Retro Wingtip design. This updated classic has glossy black finish and classic blue and green color details. If you love Ray-Ban but need a smaller frame, this is the perfect option for you.");
+            intent.putExtra("IMAGE", R.drawable.model_1);
+            startActivity(intent);
+
+        }else if (v.getId() == R.id.card_7) {
+            intent = new Intent(this, ProductView.class);
+            intent.putExtra("LABEL", "BOSE FRAMES");
+            intent.putExtra("PRICE", "₱499.99");
+            intent.putExtra("WEIGHT", "Color: Black");
+            intent.putExtra("DETAILS", "Bose Frames 901 Black are the new Retro Wingtip design. This updated classic has glossy black finish and classic blue and green color details. If you love Bose Frames but need a smaller frame, this is the perfect option for you.");
+            intent.putExtra("IMAGE", R.drawable.model_1);
+            startActivity(intent);
+
+        }else if (v.getId() == R.id.card_8) {
             intent = new Intent(this, ProductView.class);
             intent.putExtra("LABEL", "VINTAGE WIRE ROUND RIM GLASSES");
             intent.putExtra("PRICE", "₱799.99");
@@ -121,96 +169,48 @@ public class ProductCatalog extends AppCompatActivity implements PopupMenu.OnMen
             intent.putExtra("IMAGE", R.drawable.model_1);
             startActivity(intent);
 
-
-        } else if (v.getId() == R.id.card_4) {
-            intent = new Intent(this, ProductView.class);
-            intent.putExtra("LABEL", "METALLIC PRO LIPSTICK");
-            intent.putExtra("PRICE", "₱86.80");
-            intent.putExtra("WEIGHT", "• 2.3g");
-            intent.putExtra("DETAILS", "Sophie Martin Metallic Pro Lipstick has a smooth metallic finish that will keep your lips moisturized all day long. Perfect to complete your glam look!");
-            intent.putExtra("IMAGE", R.drawable.model_1);
-            startActivity(intent);
-
-
-        } else if (v.getId() == R.id.card_5) {
-            intent = new Intent(this, ProductView.class);
-            intent.putExtra("LABEL", "MATTE PRO LIPSTICK");
-            intent.putExtra("PRICE", "₱86.80");
-            intent.putExtra("WEIGHT", "• 2.3g");
-            intent.putExtra("DETAILS", "Sophie Martin Matte Pro Lipstick gives you an attractive matte finish without leaving your lips dry.");
-            intent.putExtra("IMAGE", R.drawable.model_1);
-            startActivity(intent);
-
-
-        } else if (v.getId() == R.id.card_6) {
-            intent = new Intent(this, ProductView.class);
-            intent.putExtra("LABEL", "MATTE PRO LIPSTICK BLITZ");
-            intent.putExtra("PRICE", "₱86.80");
-            intent.putExtra("WEIGHT", "• 2.3g");
-            intent.putExtra("DETAILS", "Sophie Martin Matte Pro Lipstick gives you an attractive matte finish without leaving your lips dry.");
-            intent.putExtra("IMAGE", R.drawable.model_1);
-            startActivity(intent);
-
-        }else if (v.getId() == R.id.card_7) {
-            intent = new Intent(this, ProductView.class);
-            intent.putExtra("LABEL", "LIP GLOSS");
-            intent.putExtra("PRICE", "₱97.70");
-            intent.putExtra("WEIGHT", "• 5.5ml");
-            intent.putExtra("DETAILS", "With intense color and luster, this lip gloss is specially formulated to enhance the appearance of your lips. It's easy to use and leaves your lips soft and smooth. Apply it directly on the lips or use it on top of your favorite lipstick!");
-            intent.putExtra("IMAGE", R.drawable.model_1);
-            startActivity(intent);
-
-        }else if (v.getId() == R.id.card_8) {
-            intent = new Intent(this, ProductView.class);
-            intent.putExtra("LABEL", "LIP CHEEK EYE COLOR");
-            intent.putExtra("PRICE", "₱108.70");
-            intent.putExtra("WEIGHT", "• 5.5ml");
-            intent.putExtra("DETAILS", "Three-in-one must have! It acts as lip color, cream blush and eye shadow. The formula is infused with nourishing ingredients for a smooth application and intense matte finish.");
-            intent.putExtra("IMAGE", R.drawable.model_1);
-            startActivity(intent);
-
         }else if (v.getId() == R.id.card_9) {
             intent = new Intent(this, ProductView.class);
-            intent.putExtra("LABEL", "LONG LASTING METALLIC LIP COLOR");
-            intent.putExtra("PRICE", "₱119.60");
-            intent.putExtra("WEIGHT", "• 5.5ml");
-            intent.putExtra("DETAILS", "Long Lasting Metallic Lip Color is specially formulated to give an intense and long lasting metallic finish without leaving your lips dry.");
+            intent.putExtra("LABEL", "RAY-BAN WAYFARER");
+            intent.putExtra("PRICE", "₱599.99");
+            intent.putExtra("WEIGHT", "Black");
+            intent.putExtra("DETAILS", "Ray-Ban RB2132 901 Black 52 are the new Retro Wingtip design. This updated classic has glossy black finish and classic blue and green color details. If you love Ray-Ban but need a smaller frame, this is the perfect option for you.");
             intent.putExtra("IMAGE", R.drawable.model_1);
             startActivity(intent);
 
         }else if (v.getId() == R.id.card_10) {
             intent = new Intent(this, ProductView.class);
-            intent.putExtra("LABEL", "LONG LASTING LIP COLOR");
-            intent.putExtra("PRICE", "₱119.60");
-            intent.putExtra("WEIGHT", "• 5.5ml");
-            intent.putExtra("DETAILS", "Experience a new liquid lip color that is long-wearing, non-transfer, and highly pigmented! It contains a smooth and color rich formula that comfortably glides on your lips and rapidly dries up to a matte finish and a lightweight feel that stays on all day. Plus, it has enriched with Vitamin E to keep your lips moisturized. Be bold, be beautiful!");
+            intent.putExtra("LABEL", "BOSE FRAMES");
+            intent.putExtra("PRICE", "₱499.99");
+            intent.putExtra("WEIGHT", "Color: Black");
+            intent.putExtra("DETAILS", "Bose Frames 901 Black are the new Retro Wingtip design. This updated classic has glossy black finish and classic blue and green color details. If you love Bose Frames but need a smaller frame, this is the perfect option for you.");
             intent.putExtra("IMAGE", R.drawable.model_1);
             startActivity(intent);
 
         }else if (v.getId() == R.id.card_11) {
             intent = new Intent(this, ProductView.class);
-            intent.putExtra("LABEL", "CLASSIQUE LIPSTICK");
-            intent.putExtra("PRICE", "₱119.60");
-            intent.putExtra("WEIGHT", "• 4g");
-            intent.putExtra("DETAILS", "Sophie Martin Classique Lipstick is enriched with moisturizer to keep your lips smooth and healthy. Its creamy and glossy finish is suitable for dry lips.");
+            intent.putExtra("LABEL", "VINTAGE WIRE ROUND RIM GLASSES");
+            intent.putExtra("PRICE", "₱799.99");
+            intent.putExtra("WEIGHT", "Color: Gold");
+            intent.putExtra("DETAILS", "VINTAGE WIRE ROUND RIM GLASSES Gold are the new Retro Wingtip design. This updated classic has glossy black finish and classic blue and green color details. If you love VINTAGE WIRE ROUND RIM GLASSES but need a smaller frame, this is the perfect option for you.");
             intent.putExtra("IMAGE", R.drawable.model_1);
             startActivity(intent);
 
         }else if (v.getId() == R.id.card_12) {
             intent = new Intent(this, ProductView.class);
-            intent.putExtra("LABEL", "METALLIC PRO LIPSTICK HOLLYWOOD");
-            intent.putExtra("PRICE", "₱86.80");
-            intent.putExtra("WEIGHT", "• 2.3g");
-            intent.putExtra("DETAILS", "Sophie Martin Metallic Pro Lipstick has a smooth metallic finish that will keep your lips moisturized all day long. Perfect to complete your glam look!");
+            intent.putExtra("LABEL", "RAY-BAN WAYFARER");
+            intent.putExtra("PRICE", "₱599.99");
+            intent.putExtra("WEIGHT", "Black");
+            intent.putExtra("DETAILS", "Ray-Ban RB2132 901 Black 52 are the new Retro Wingtip design. This updated classic has glossy black finish and classic blue and green color details. If you love Ray-Ban but need a smaller frame, this is the perfect option for you.");
             intent.putExtra("IMAGE", R.drawable.model_1);
             startActivity(intent);
 
         }else if (v.getId() == R.id.card_13) {
             intent = new Intent(this, ProductView.class);
-            intent.putExtra("LABEL", "MAGIC PINK LIP GLOSS - 5 PCS BUNDLE");
-            intent.putExtra("PRICE", "₱297.60");
-            intent.putExtra("WEIGHT", "• 3g x 5");
-            intent.putExtra("DETAILS", "Enjoy 20% discount with this awesome bundle! Valued at P695, Magic Pink Lip Gloss 5-piece Bundle can now be yours for only P545. Buy now and save P150!");
+            intent.putExtra("LABEL", "BOSE FRAMES");
+            intent.putExtra("PRICE", "₱499.99");
+            intent.putExtra("WEIGHT", "Color: Black");
+            intent.putExtra("DETAILS", "Bose Frames 901 Black are the new Retro Wingtip design. This updated classic has glossy black finish and classic blue and green color details. If you love Bose Frames but need a smaller frame, this is the perfect option for you.");
             intent.putExtra("IMAGE", R.drawable.model_1);
             startActivity(intent);
 

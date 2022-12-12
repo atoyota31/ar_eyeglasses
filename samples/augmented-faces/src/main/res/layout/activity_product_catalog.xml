@@ -214,7 +214,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="sans-serif-thin"
-                            android:text="₱86.80"
+                            android:text="₱599.99"
                             android:textColor="@color/black"
                             android:textSize="30dp"
                             android:textStyle="bold" />
@@ -223,7 +223,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="sans-serif-condensed-light"
-                            android:text="METALLIC PRO LIPSTICK"
+                            android:text="RAY-BAN WAYFARER"
                             android:textColor="@color/black"
                             android:textSize="25dp" />
 
@@ -254,16 +254,21 @@
                             android:layout_height="wrap_content"
                             android:text="⭐4.5" />
 
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="⭐4.5" />
+
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="300dp"
-                            android:src="@drawable/model_1" />
+                            android:src="@drawable/glass2_model" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="sans-serif-thin"
-                            android:text="₱86.80"
+                            android:text="₱499.99"
                             android:textColor="@color/black"
                             android:textSize="30dp"
                             android:textStyle="bold" />
@@ -272,10 +277,9 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="sans-serif-condensed-light"
-                            android:text="MATTE PRO LIPSTICK"
+                            android:text="BOSE FRAMES "
                             android:textColor="@color/black"
-                            android:textSize="30dp" />
-
+                            android:textSize="20dp" />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
@@ -354,13 +358,13 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="300dp"
-                            android:src="@drawable/model_1" />
+                            android:src="@drawable/model_3" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="sans-serif-thin"
-                            android:text="₱86.80"
+                            android:text="₱799.99"
                             android:textColor="@color/black"
                             android:textSize="30dp"
                             android:textStyle="bold" />
@@ -369,9 +373,9 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="sans-serif-condensed-light"
-                            android:text="MATTE PRO LIPSTICK BLITZ"
+                            android:text="VINTAGE WIRE ROUND RIM GLASSES"
                             android:textColor="@color/black"
-                            android:textSize="25dp" />
+                            android:textSize="20dp" />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
@@ -402,13 +406,13 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="300dp"
-                            android:src="@drawable/model_1" />
+                            android:src="@drawable/model_3" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="sans-serif-thin"
-                            android:text="₱97.70"
+                            android:text="₱799.99"
                             android:textColor="@color/black"
                             android:textSize="30dp"
                             android:textStyle="bold" />
@@ -417,9 +421,9 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="sans-serif-condensed-light"
-                            android:text="LIP GLOSS"
+                            android:text="VINTAGE WIRE ROUND RIM GLASSES"
                             android:textColor="@color/black"
-                            android:textSize="25dp" />
+                            android:textSize="20dp" />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
@@ -450,13 +454,13 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="300dp"
-                            android:src="@drawable/model_1" />
+                            android:src="@drawable/model_3" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="sans-serif-thin"
-                            android:text="₱108.70"
+                            android:text="₱799.99"
                             android:textColor="@color/black"
                             android:textSize="30dp"
                             android:textStyle="bold" />
@@ -465,9 +469,9 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="sans-serif-condensed-light"
-                            android:text="LIP CHEEK EYE COLOR"
+                            android:text="VINTAGE WIRE ROUND RIM GLASSES"
                             android:textColor="@color/black"
-                            android:textSize="25dp" />
+                            android:textSize="20dp" />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
@@ -498,13 +502,13 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="300dp"
-                            android:src="@drawable/model_1" />
+                            android:src="@drawable/model_3" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="sans-serif-thin"
-                            android:text="₱119.60"
+                            android:text="₱799.99"
                             android:textColor="@color/black"
                             android:textSize="30dp"
                             android:textStyle="bold" />
@@ -513,7 +517,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="sans-serif-condensed-light"
-                            android:text="LONG LASTING METALLIC LIP COLOR"
+                            android:text="VINTAGE WIRE ROUND RIM GLASSES"
                             android:textColor="@color/black"
                             android:textSize="20dp" />
                     </LinearLayout>
@@ -546,13 +550,13 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="300dp"
-                            android:src="@drawable/model_1" />
+                            android:src="@drawable/model_3" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="sans-serif-thin"
-                            android:text="₱119.60"
+                            android:text="₱799.99"
                             android:textColor="@color/black"
                             android:textSize="30dp"
                             android:textStyle="bold" />
@@ -561,9 +565,9 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="sans-serif-condensed-light"
-                            android:text="LONG LASTING LIP COLOR"
+                            android:text="VINTAGE WIRE ROUND RIM GLASSES"
                             android:textColor="@color/black"
-                            android:textSize="25dp" />
+                            android:textSize="20dp" />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
@@ -594,13 +598,13 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="300dp"
-                            android:src="@drawable/model_1" />
+                            android:src="@drawable/model_3" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="sans-serif-thin"
-                            android:text="₱119.60"
+                            android:text="₱799.99"
                             android:textColor="@color/black"
                             android:textSize="30dp"
                             android:textStyle="bold" />
@@ -609,9 +613,9 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="sans-serif-condensed-light"
-                            android:text="CLASSIQUE LIPSTICK"
+                            android:text="VINTAGE WIRE ROUND RIM GLASSES"
                             android:textColor="@color/black"
-                            android:textSize="25dp" />
+                            android:textSize="20dp" />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
@@ -642,13 +646,13 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="300dp"
-                            android:src="@drawable/model_1" />
+                            android:src="@drawable/model_3" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="sans-serif-thin"
-                            android:text="₱297.60"
+                            android:text="₱799.99"
                             android:textColor="@color/black"
                             android:textSize="30dp"
                             android:textStyle="bold" />
@@ -657,7 +661,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="sans-serif-condensed-light"
-                            android:text="MAGIC PINK LIP GLOSS - 5 PCS BUNDLE"
+                            android:text="VINTAGE WIRE ROUND RIM GLASSES"
                             android:textColor="@color/black"
                             android:textSize="20dp" />
                     </LinearLayout>
