@@ -191,9 +191,9 @@ public class ProductView extends AppCompatActivity {
 
     public void Try(View v){
 
-        if (product_label.equals("MAGIC PINK LIP GLOSS")){
+        if (product_label.equals("RAY-BAN WAYFARER")){
             intent = new Intent(this, MainActivity.class);
-            intent.putExtra("LABEL", "MAGIC PINK LIP GLOSS");
+            intent.putExtra("LABEL", "RAY-BAN WAYFARER");
             intent.putExtra("MODEL", "models/glass.glb");
             startActivity(intent);
 
