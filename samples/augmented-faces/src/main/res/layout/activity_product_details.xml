@@ -103,7 +103,9 @@
                             android:layout_height="40dp"
                             android:layout_centerVertical="true"
                             android:background="@drawable/button_minus"
-                            android:padding="10dp"  />
+                            android:padding="10dp"
+                            android:onClick="previousColor"
+                            />
 
                         <TextView
                             android:id="@+id/detailsColor"
@@ -115,7 +117,7 @@
                             android:gravity="center"
                             android:textAlignment="center"
                             android:textColor="@color/black"
-                            android:textSize="25dp" />
+                            android:textSize="18dp" />
 
                         <ImageButton
                             android:id="@+id/color_right"
@@ -124,7 +126,9 @@
                             android:layout_centerVertical="true"
                             android:layout_toRightOf="@+id/detailsColor"
                             android:background="@drawable/button_add"
-                            android:padding="10dp" />
+                            android:padding="10dp"
+                            android:onClick="nextColor"
+                            />
                     </RelativeLayout>
 
 
@@ -134,7 +138,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="15dp"
-                        android:text="Quantity1"
+                        android:text="Quantity"
                         android:textColor="@color/black"
                         android:textSize="20dp" />
 

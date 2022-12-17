@@ -36,6 +36,10 @@ public class ProductDetails extends AppCompatActivity{
     private double count_total = 0.0;
     //
     private DecimalFormat df = new DecimalFormat(",###.00");
+    //
+    private String[] arr_colors = {"Black", "Blue", "Green"};
+    private int[] arr_images = {R.drawable.blendable_lip_angel, R.drawable.empty_glass, R.drawable.glass2_model};
+    private int current_color = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,6 +60,7 @@ public class ProductDetails extends AppCompatActivity{
 
         //Get Value From ProductView
         Bundle bundle = getIntent().getExtras();
+
         if (bundle!=null){
             item_name = bundle.getString("LABEL");
             item_color = bundle.getString("COLOR");
@@ -64,10 +69,14 @@ public class ProductDetails extends AppCompatActivity{
 
             product_name.setText(item_name);
             product_price.setText(item_price);
-//            product_color.setText(item_color);
             product_image.setImageResource(item_image);
-
             price = Double.parseDouble(item_price);
+
+            if(item_color.equalsIgnoreCase("Black")){
+                current_color = 0;
+                product_image.setImageResource(arr_images[current_color]);
+                product_color.setText(arr_colors[current_color]);
+            }
 
             count_total = (double) count_quantity * price;
             quantity.setText(count_quantity+"");
@@ -104,6 +113,23 @@ public class ProductDetails extends AppCompatActivity{
         });
 
     }
+
+    public void previousColor(View v ){
+        if(current_color != 0){
+            current_color--;
+            product_image.setImageResource(arr_images[current_color]);
+            product_color.setText(arr_colors[current_color]);
+        }
+    }
+
+    public void nextColor(View v ){
+        if(current_color != arr_colors.length - 1){
+            current_color++;
+            product_image.setImageResource(arr_images[current_color]);
+            product_color.setText(arr_colors[current_color]);
+        }
+    }
+
 
     public void decrementValue(View v){
         if(count_quantity <= 1){
