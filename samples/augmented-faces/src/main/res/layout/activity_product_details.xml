@@ -78,7 +78,7 @@
                         android:textColor="@color/black"
                         android:textSize="20dp" />
 
-                    //product color
+<!--                    //product color-->
                     <TextView
                         android:id="@+id/detailsProductColor"
                         android:layout_below="@+id/detailsProductPrice"
