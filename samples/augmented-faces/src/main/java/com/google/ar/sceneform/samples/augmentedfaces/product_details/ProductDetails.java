@@ -76,6 +76,16 @@ public class ProductDetails extends AppCompatActivity{
                 current_color = 0;
                 product_image.setImageResource(arr_images[current_color]);
                 product_color.setText(arr_colors[current_color]);
+
+            }else if(item_color.equalsIgnoreCase("Blue")){
+                current_color = 1;
+                product_image.setImageResource(arr_images[current_color]);
+                product_color.setText(arr_colors[current_color]);
+
+            }else if(item_color.equalsIgnoreCase("Green")){
+                current_color = 2;
+                product_image.setImageResource(arr_images[current_color]);
+                product_color.setText(arr_colors[current_color]);
             }
 
             count_total = (double) count_quantity * price;
