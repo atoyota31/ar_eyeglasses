@@ -50,7 +50,7 @@ public class ProductDetails extends AppCompatActivity{
         product_image = (ImageView) findViewById(R.id.detailsProductImage);
         product_name = (TextView) findViewById(R.id.detailsProductName);
         product_price = (TextView) findViewById(R.id.detailsProductPrice);
-        product_color = (TextView) findViewById(R.id.detailsProductColor);
+        product_color = (TextView) findViewById(R.id.detailsColor);
         quantity = (TextView) findViewById(R.id.detailsQuantity);
         total = (TextView) findViewById(R.id.detailsTotalPayment);
 
@@ -64,7 +64,7 @@ public class ProductDetails extends AppCompatActivity{
 
             product_name.setText(item_name);
             product_price.setText(item_price);
-            product_color.setText(item_color);
+//            product_color.setText(item_color);
             product_image.setImageResource(item_image);
 
             price = Double.parseDouble(item_price);
