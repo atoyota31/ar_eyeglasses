@@ -26,7 +26,7 @@ public class ProductList {
 
     private static final DecimalFormat df = new DecimalFormat(",###.00");
 
-    public void addCartItem(String name, String price, String color, int quantity, double total){
+    public void addCartItem( String name, String price, String color, int quantity, double total){
         if (list.isEmpty()){
             //Get the Array if Empty because the loop won't work if empty.
             list.add(new Product(
@@ -107,7 +107,13 @@ public class ProductList {
 
             if (myList.name.equals("RAY-BAN WAYFARER")){
                 Map<String, Object> listView = new HashMap<>();
-                listView.put("photo", R.drawable.model_1);
+                if(myList.color.equalsIgnoreCase("Black")){
+                    listView.put("photo", R.drawable.model_1_black);
+                }else if(myList.color.equalsIgnoreCase("Blue")){
+                    listView.put("photo", R.drawable.model_1_blue);
+                }else if(myList.color.equalsIgnoreCase("Green")) {
+                    listView.put("photo", R.drawable.model_1_green);
+                }
                 listView.put("name", "Name: " + myList.name);
                 listView.put("price", "Price: ₱" +myList.price);
                 listView.put("color", "Color: " +myList.color);

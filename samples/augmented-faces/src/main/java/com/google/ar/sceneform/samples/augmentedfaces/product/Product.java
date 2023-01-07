@@ -7,7 +7,7 @@ public class Product {
     public int quantity;
     public double total;
 
-    public Product(String prod_name, String prod_price, String prod_color, int prod_quantity, double prod_total) {
+    public Product( String prod_name, String prod_price, String prod_color, int prod_quantity, double prod_total) {
 
         this.name = prod_name;
         this.price = prod_price;
