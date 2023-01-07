@@ -122,7 +122,15 @@ public class CartActivity extends AppCompatActivity {
 
                         if (myList.name.equals("RAY-BAN WAYFARER")){
                             Intent intent = new Intent(CartActivity.this, CartItemActivity.class);
-                            intent.putExtra("PICTURE", R.drawable.model_1);
+
+                            if(myList.color.equalsIgnoreCase("Black")){
+                                intent.putExtra("PICTURE", R.drawable.model_1_black);
+                            }else if(myList.color.equalsIgnoreCase("Blue")){
+                                intent.putExtra("PICTURE", R.drawable.model_1_blue);
+                            }else if(myList.color.equalsIgnoreCase("Green")) {
+                                intent.putExtra("PICTURE", R.drawable.model_1_green);
+                            }
+
                             intent.putExtra("NAME", myList.name);
                             intent.putExtra("PRICE", myList.price);
                             intent.putExtra("COLOR", myList.color);

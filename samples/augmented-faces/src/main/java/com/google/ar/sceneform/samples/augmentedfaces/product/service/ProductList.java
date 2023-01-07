@@ -75,9 +75,9 @@ public class ProductList {
         countList();
     }
 
-    public void updateCartItem(String name, int quantity, double total){
+    public void updateCartItem(String color, String name, int quantity, double total){
         for (Product myList : list) {
-            if (myList.name.equals(name)){
+            if (myList.name.equals(name) && myList.color.equals(color)){
                 myList.quantity = quantity;
                 myList.total = total;
                 break;

@@ -75,7 +75,7 @@ public class CartItemActivity extends AppCompatActivity {
         buttonBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                prod_list.updateCartItem(item_name,  item_quantity, item_total);
+                prod_list.updateCartItem(item_color, item_name,  item_quantity, item_total);
                 Toast.makeText(CartItemActivity.this, "Item updated.", Toast.LENGTH_SHORT).show();
                 Intent intent = intent = new Intent(CartItemActivity.this, CartActivity.class);
                 startActivity(intent);
@@ -86,7 +86,7 @@ public class CartItemActivity extends AppCompatActivity {
         title_bar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                prod_list.updateCartItem(item_name,  item_quantity, item_total);
+                prod_list.updateCartItem(item_color, item_name,  item_quantity, item_total);
                 Toast.makeText(CartItemActivity.this, "Item updated.", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(CartItemActivity.this, ProductCatalog.class);
                 startActivity(intent);
