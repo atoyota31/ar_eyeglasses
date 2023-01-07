@@ -43,11 +43,9 @@ public class ProductList {
             int getIndex = 0;
 
             for (Product myList : list) {
-                if (myList.name.equals(name)) {
-
+                if (myList.name.equals(name) && myList.color.equals(color)) {
                     previous_quantity = myList.quantity;
                     previous_total = myList.total;
-
                     list.remove(myList);
                     break;
                 }
