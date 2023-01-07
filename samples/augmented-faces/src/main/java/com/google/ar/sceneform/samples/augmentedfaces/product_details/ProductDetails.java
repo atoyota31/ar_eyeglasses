@@ -38,7 +38,7 @@ public class ProductDetails extends AppCompatActivity{
     private DecimalFormat df = new DecimalFormat(",###.00");
     //
     private String[] arr_colors = {"Black", "Blue", "Green"};
-    private int[] arr_images = {R.drawable.blendable_lip_angel, R.drawable.empty_glass, R.drawable.glass2_model};
+    private int[] arr_images = {R.drawable.model_1_black, R.drawable.model_1_blue, R.drawable.model_1_green};
     private int current_color = 0;
 
     @Override
