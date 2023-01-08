@@ -32,6 +32,10 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
     implementation 'com.nex3z:notification-badge:1.0.5'
 
+    implementation files('C:/Users/jorpa/Downloads/libs/activation.jar')
+    implementation files('C:/Users/jorpa/Downloads/libs/additionnal.jar')
+    implementation files('C:/Users/jorpa/Downloads/libs/mail.jar')
+
     releaseImplementation "com.gorisse.thomas.sceneform:sceneform:1.21.0"
     debugApi project(":sceneform")
 }

@@ -21,6 +21,7 @@ import com.google.ar.sceneform.samples.augmentedfaces.form.dialog.CheckInternet;
 import com.google.ar.sceneform.samples.augmentedfaces.form.dialog.OrderSuccess;
 import com.google.ar.sceneform.samples.augmentedfaces.form.service.Check_Internet;
 import com.google.ar.sceneform.samples.augmentedfaces.product_catalog.ProductCatalog;
+import com.google.ar.sceneform.samples.augmentedfaces.email_service.GMailService;
 
 public class FormOrder extends AppCompatActivity {
 
@@ -28,7 +29,7 @@ public class FormOrder extends AppCompatActivity {
     public static String txt_items, txt_price, txt_quantity, txt_total;
     //
     private Check_Internet check_internet = new Check_Internet();
-    //private GMailService sender;
+    private GMailService sender;
     //
     private TextInputLayout txt_firstname, txt_middlename, txt_lastname, txt_address, txt_email, txt_phone;
     private TextView prod_name, order_items, order_total, prod_quantity, form_total;
@@ -36,11 +37,10 @@ public class FormOrder extends AppCompatActivity {
     private ImageButton cart, buttonBack;
     private ImageView title_bar;
     //Sender
-    private String username = "sophieparisforever@gmail.com";
-    private String password = "0910916cvwkxam";
+    private String username = "arthur.estoconing@gmail.com";
+    private String password = "lwwmykszfvstzmwc";
     //Notify the Seller
-    private String subject, body;
-    private String recipient = "pauljorhahaha@gmail.com";
+    private String recipient, subject, body;
     private String msg_quantity = "";
     //Notify the Customer
     private String subject1, body1, recipient1;
@@ -89,7 +89,7 @@ public class FormOrder extends AppCompatActivity {
 
         place_order = findViewById(R.id.form_PlaceOrder);
 
-        //sender = new GMailService(username, password);
+        sender = new GMailService(username, password);
 
 //        Bundle bundle = getIntent().getExtras();
 //        if (bundle!=null){
@@ -138,7 +138,7 @@ public class FormOrder extends AppCompatActivity {
                         Toast.makeText(FormOrder.this, "Invalid", Toast.LENGTH_SHORT).show();
 
                     }else{
-                        subject = "SOPHIE PARIS LIPSTICK ORDER";
+                        subject = "EYE FIT IT EYEGLASSES ORDER";
                         body = "NEW ORDER HAS ARRIVED!!!" + "\n \n" +
                                 "Customer Details:" + "\n" +
                                 "Name: " + txt_firstname.getEditText().getText().toString().trim() + " " +
@@ -152,7 +152,7 @@ public class FormOrder extends AppCompatActivity {
                                 "Total Items: " + msg_quantity + "\n" +
                                 "Total Payment: ₱" + txt_total;
 
-                        subject1 = "SOPHIE PARIS LIPSTICK ORDER";
+                        subject1 = "EYE FIT IT EYEGLASSES ORDER";
                         body1 = "Thank you for purchasing our product/s, "+txt_firstname.getEditText().getText().toString().trim() +" "+
                                 txt_middlename.getEditText().getText().toString().trim()+" "+
                                 txt_lastname.getEditText().getText().toString().trim()+"!" + "\n" +
@@ -280,8 +280,7 @@ public class FormOrder extends AppCompatActivity {
         protected Void doInBackground(Void... mApi) {
             try {
                 // Add Subject, Body, Username, and Recipient.
-//                sender.sendMail(subject, body, username, recipient);
-//                sender.sendMail(subject1, body1, username, recipient1);
+                sender.sendMail(subject1, body1, username, recipient1);
                 Log.d("send", "done");
             }
             catch (Exception ex) {
