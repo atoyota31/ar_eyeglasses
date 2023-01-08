@@ -212,7 +212,7 @@ public class ProductView extends AppCompatActivity {
         }else if (product_label.equalsIgnoreCase("GLASSES 4")){
             intent = new Intent(this, MainActivity.class);
             intent.putExtra("LABEL", "GLASSES 4");
-            intent.putExtra("MODEL", "models/glass_3/black.glb");
+            intent.putExtra("MODEL", "models/glass_4/black.glb");
             startActivity(intent);
 
         }
