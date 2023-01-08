@@ -194,19 +194,25 @@ public class ProductView extends AppCompatActivity {
         if (product_label.equalsIgnoreCase("RAY-BAN WAYFARER")){
             intent = new Intent(this, MainActivity.class);
             intent.putExtra("LABEL", "RAY-BAN WAYFARER");
-            intent.putExtra("MODEL", "models/glass.glb");
+            intent.putExtra("MODEL", "models/glass_1/black.glb");
             startActivity(intent);
 
         }else if (product_label.equalsIgnoreCase("BOSE FRAMES")){
             intent = new Intent(this, MainActivity.class);
             intent.putExtra("LABEL", "BOSE FRAMES");
-            intent.putExtra("MODEL", "models/glass2.glb");
+            intent.putExtra("MODEL", "models/glass_2/black.glb");
             startActivity(intent);
 
         }else if (product_label.equalsIgnoreCase("VINTAGE WIRE ROUND RIM GLASSES")){
             intent = new Intent(this, MainActivity.class);
             intent.putExtra("LABEL", "VINTAGE WIRE ROUND RIM GLASSES");
-            intent.putExtra("MODEL", "models/glass3.glb");
+            intent.putExtra("MODEL", "models/glass_3/black.glb");
+            startActivity(intent);
+
+        }else if (product_label.equalsIgnoreCase("GLASSES 4")){
+            intent = new Intent(this, MainActivity.class);
+            intent.putExtra("LABEL", "GLASSES 4");
+            intent.putExtra("MODEL", "models/glass_3/black.glb");
             startActivity(intent);
 
         }

@@ -112,6 +112,7 @@ public class ProductCatalog extends AppCompatActivity implements PopupMenu.OnMen
             intent.putExtra("DETAILS", "Bose Frames 901 Black are the new Retro Wingtip design. This updated classic has glossy black finish and classic blue and green color details. If you love Bose Frames but need a smaller frame, this is the perfect option for you.");
             intent.putExtra("IMAGE", R.drawable.glass2_model);
             startActivity(intent);
+
         } else if (v.getId() == R.id.card_3) {
             intent = new Intent(this, ProductView.class);
             intent.putExtra("LABEL", "VINTAGE WIRE ROUND RIM GLASSES");
@@ -121,10 +122,9 @@ public class ProductCatalog extends AppCompatActivity implements PopupMenu.OnMen
             intent.putExtra("IMAGE", R.drawable.model_3);
             startActivity(intent);
 
-
         } else if (v.getId() == R.id.card_4) {
             intent = new Intent(this, ProductView.class);
-            intent.putExtra("LABEL", "METALLIC PRO LIPSTICK");
+            intent.putExtra("LABEL", "GLASSES 4");
             intent.putExtra("PRICE", "₱86.80");
             intent.putExtra("WEIGHT", "• 2.3g");
             intent.putExtra("DETAILS", "Sophie Martin Metallic Pro Lipstick has a smooth metallic finish that will keep your lips moisturized all day long. Perfect to complete your glam look!");

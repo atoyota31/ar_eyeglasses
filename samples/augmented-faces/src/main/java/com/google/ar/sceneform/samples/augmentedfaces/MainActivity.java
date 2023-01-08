@@ -75,6 +75,10 @@ public class MainActivity extends AppCompatActivity {
                 }else if(label.equalsIgnoreCase("VINTAGE WIRE ROUND RIM GLASSES")){
                     finish();
                     startActivity(getIntent().putExtra("MODEL", "models/glass_3/blue.glb"));
+
+                }else if(label.equalsIgnoreCase("GLASSES 4")){
+                    finish();
+                    startActivity(getIntent().putExtra("MODEL", "models/glass_4/blue.glb"));
                 }
             }
         });
@@ -93,6 +97,10 @@ public class MainActivity extends AppCompatActivity {
                 }else if(label.equalsIgnoreCase("VINTAGE WIRE ROUND RIM GLASSES")){
                     finish();
                     startActivity(getIntent().putExtra("MODEL", "models/glass_3/green.glb"));
+
+                }else if(label.equalsIgnoreCase("GLASSES 4")){
+                    finish();
+                    startActivity(getIntent().putExtra("MODEL", "models/glass_4/green.glb"));
                 }
             }
         });
@@ -111,6 +119,10 @@ public class MainActivity extends AppCompatActivity {
                 }else if(label.equalsIgnoreCase("VINTAGE WIRE ROUND RIM GLASSES")){
                     finish();
                     startActivity(getIntent().putExtra("MODEL", "models/glass_3/black.glb"));
+
+                }else if(label.equalsIgnoreCase("GLASSES 4")){
+                    finish();
+                    startActivity(getIntent().putExtra("MODEL", "models/glass_4/black.glb"));
                 }
             }
         });
