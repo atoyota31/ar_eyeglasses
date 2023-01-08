@@ -39,8 +39,8 @@ public class MainActivity extends AppCompatActivity {
     private ModelRenderable faceModel;
     private final HashMap<AugmentedFace, AugmentedFaceNode> facesNodes = new HashMap<>();
 
-    private String model = "";
-    private Button button1, button2;
+    private String label, model;
+    private Button button1, button2, button3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,9 +49,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         button1 = findViewById(R.id.style_1);
         button2 = findViewById(R.id.style_2);
+        button3 = findViewById(R.id.style_3);
 
         Bundle bundle = getIntent().getExtras();
         if (bundle!=null){
+            label = bundle.getString("LABEL");
             model = bundle.getString("MODEL");
         }
 
@@ -62,16 +64,54 @@ public class MainActivity extends AppCompatActivity {
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                finish();
-                startActivity(getIntent().putExtra("MODEL", "models/glass_blue.glb"));
+                if(label.equalsIgnoreCase("RAY-BAN WAYFARER")){
+                    finish();
+                    startActivity(getIntent().putExtra("MODEL", "models/glass_1/blue.glb"));
+
+                }else if(label.equalsIgnoreCase("BOSE FRAMES")){
+                    finish();
+                    startActivity(getIntent().putExtra("MODEL", "models/glass_2/blue.glb"));
+
+                }else if(label.equalsIgnoreCase("VINTAGE WIRE ROUND RIM GLASSES")){
+                    finish();
+                    startActivity(getIntent().putExtra("MODEL", "models/glass_3/blue.glb"));
+                }
             }
         });
 
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                finish();
-                startActivity(getIntent().putExtra("MODEL", "models/glass_green.glb"));
+                if(label.equalsIgnoreCase("RAY-BAN WAYFARER")){
+                    finish();
+                    startActivity(getIntent().putExtra("MODEL", "models/glass_1/green.glb"));
+
+                }else if(label.equalsIgnoreCase("BOSE FRAMES")){
+                    finish();
+                    startActivity(getIntent().putExtra("MODEL", "models/glass_2/green.glb"));
+
+                }else if(label.equalsIgnoreCase("VINTAGE WIRE ROUND RIM GLASSES")){
+                    finish();
+                    startActivity(getIntent().putExtra("MODEL", "models/glass_3/green.glb"));
+                }
+            }
+        });
+
+        button3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(label.equalsIgnoreCase("RAY-BAN WAYFARER")){
+                    finish();
+                    startActivity(getIntent().putExtra("MODEL", "models/glass_1/black.glb"));
+
+                }else if(label.equalsIgnoreCase("BOSE FRAMES")){
+                    finish();
+                    startActivity(getIntent().putExtra("MODEL", "models/glass_2/black.glb"));
+
+                }else if(label.equalsIgnoreCase("VINTAGE WIRE ROUND RIM GLASSES")){
+                    finish();
+                    startActivity(getIntent().putExtra("MODEL", "models/glass_3/black.glb"));
+                }
             }
         });
 

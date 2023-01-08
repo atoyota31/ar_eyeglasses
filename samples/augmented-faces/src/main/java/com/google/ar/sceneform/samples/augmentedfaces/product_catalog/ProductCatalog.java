@@ -110,7 +110,7 @@ public class ProductCatalog extends AppCompatActivity implements PopupMenu.OnMen
             intent.putExtra("PRICE", "₱499.99");
             intent.putExtra("WEIGHT", "Color: Black");
             intent.putExtra("DETAILS", "Bose Frames 901 Black are the new Retro Wingtip design. This updated classic has glossy black finish and classic blue and green color details. If you love Bose Frames but need a smaller frame, this is the perfect option for you.");
-            intent.putExtra("IMAGE", R.drawable.model_1);
+            intent.putExtra("IMAGE", R.drawable.glass2_model);
             startActivity(intent);
         } else if (v.getId() == R.id.card_3) {
             intent = new Intent(this, ProductView.class);
@@ -118,7 +118,7 @@ public class ProductCatalog extends AppCompatActivity implements PopupMenu.OnMen
             intent.putExtra("PRICE", "₱799.99");
             intent.putExtra("WEIGHT", "Color: Gold");
             intent.putExtra("DETAILS", "VINTAGE WIRE ROUND RIM GLASSES Gold are the new Retro Wingtip design. This updated classic has glossy black finish and classic blue and green color details. If you love VINTAGE WIRE ROUND RIM GLASSES but need a smaller frame, this is the perfect option for you.");
-            intent.putExtra("IMAGE", R.drawable.model_1);
+            intent.putExtra("IMAGE", R.drawable.model_3);
             startActivity(intent);
 
 

@@ -93,7 +93,7 @@ public class ProductView extends AppCompatActivity {
 
     public void Buy(View v) {
 
-        if (product_label.equals("RAY-BAN WAYFARER")){
+        if (product_label.equalsIgnoreCase("RAY-BAN WAYFARER")){
             intent = new Intent(this, ProductDetails.class);
             intent.putExtra("LABEL", "RAY-BAN WAYFARER");
             intent.putExtra("COLOR", "Black");
@@ -101,84 +101,84 @@ public class ProductView extends AppCompatActivity {
             intent.putExtra("PICTURE", R.drawable.model_1);
             startActivity(intent);
 
-        }else if (product_label.equals("BLENDABLE LIP AND CHEEK COLOR")){
+        }else if (product_label.equalsIgnoreCase("BLENDABLE LIP AND CHEEK COLOR")){
             intent = new Intent(this, ProductDetails.class);
             intent.putExtra("LABEL", "BLENDABLE LIP AND CHEEK COLOR");
             intent.putExtra("PRICE", "81.40");
             intent.putExtra("PICTURE", R.drawable.blendable_lip_angel);
             startActivity(intent);
 
-        }else if (product_label.equals("BLENDABLE LIP AND CHEEK COLOR ANGEL")){
+        }else if (product_label.equalsIgnoreCase("BLENDABLE LIP AND CHEEK COLOR ANGEL")){
             intent = new Intent(this, ProductDetails.class);
             intent.putExtra("LABEL", "BLENDABLE LIP AND CHEEK COLOR ANGEL");
             intent.putExtra("PRICE", "81.40");
             intent.putExtra("PICTURE", R.drawable.blendable_lip_angel);
             startActivity(intent);
 
-        }else if (product_label.equals("METALLIC PRO LIPSTICK")){
+        }else if (product_label.equalsIgnoreCase("METALLIC PRO LIPSTICK")){
             intent = new Intent(this, ProductDetails.class);
             intent.putExtra("LABEL", "METALLIC PRO LIPSTICK");
             intent.putExtra("PRICE", "86.80");
             intent.putExtra("PICTURE", R.drawable.blendable_lip_angel);
             startActivity(intent);
 
-        }else if (product_label.equals("MATTE PRO LIPSTICK")){
+        }else if (product_label.equalsIgnoreCase("MATTE PRO LIPSTICK")){
             intent = new Intent(this, ProductDetails.class);
             intent.putExtra("LABEL", "MATTE PRO LIPSTICK");
             intent.putExtra("PRICE", "86.80");
             intent.putExtra("PICTURE", R.drawable.blendable_lip_angel);
             startActivity(intent);
 
-        }else if (product_label.equals("MATTE PRO LIPSTICK BLITZ")){
+        }else if (product_label.equalsIgnoreCase("MATTE PRO LIPSTICK BLITZ")){
             intent = new Intent(this, ProductDetails.class);
             intent.putExtra("LABEL", "MATTE PRO LIPSTICK BLITZ");
             intent.putExtra("PRICE", "86.80");
             intent.putExtra("PICTURE", R.drawable.blendable_lip_angel);
             startActivity(intent);
 
-        }else if (product_label.equals("LIP GLOSS")){
+        }else if (product_label.equalsIgnoreCase("LIP GLOSS")){
             intent = new Intent(this, ProductDetails.class);
             intent.putExtra("LABEL", "LIP GLOSS");
             intent.putExtra("PRICE", "97.70");
             intent.putExtra("PICTURE", R.drawable.blendable_lip_angel);
             startActivity(intent);
 
-        }else if (product_label.equals("LIP CHEEK EYE COLOR")){
+        }else if (product_label.equalsIgnoreCase("LIP CHEEK EYE COLOR")){
             intent = new Intent(this, ProductDetails.class);
             intent.putExtra("LABEL", "LIP CHEEK EYE COLOR");
             intent.putExtra("PRICE", "108.70");
             intent.putExtra("PICTURE", R.drawable.blendable_lip_angel);
             startActivity(intent);
 
-        }else if (product_label.equals("LONG LASTING METALLIC LIP COLOR")){
+        }else if (product_label.equalsIgnoreCase("LONG LASTING METALLIC LIP COLOR")){
             intent = new Intent(this, ProductDetails.class);
             intent.putExtra("LABEL", "LONG LASTING METALLIC LIP COLOR");
             intent.putExtra("PRICE", "119.60");
             intent.putExtra("PICTURE", R.drawable.blendable_lip_angel);
             startActivity(intent);
 
-        }else if (product_label.equals("LONG LASTING LIP COLOR")){
+        }else if (product_label.equalsIgnoreCase("LONG LASTING LIP COLOR")){
             intent = new Intent(this, ProductDetails.class);
             intent.putExtra("LABEL", "LONG LASTING LIP COLOR");
             intent.putExtra("PRICE", "119.60");
             intent.putExtra("PICTURE", R.drawable.blendable_lip_angel);
             startActivity(intent);
 
-        }else if (product_label.equals("CLASSIQUE LIPSTICK")){
+        }else if (product_label.equalsIgnoreCase("CLASSIQUE LIPSTICK")){
             intent = new Intent(this, ProductDetails.class);
             intent.putExtra("LABEL", "CLASSIQUE LIPSTICK");
             intent.putExtra("PRICE", "119.60");
             intent.putExtra("PICTURE", R.drawable.blendable_lip_angel);
             startActivity(intent);
 
-        }else if (product_label.equals("METALLIC PRO LIPSTICK HOLLYWOOD")){
+        }else if (product_label.equalsIgnoreCase("METALLIC PRO LIPSTICK HOLLYWOOD")){
             intent = new Intent(this, ProductDetails.class);
             intent.putExtra("LABEL", "METALLIC PRO LIPSTICK HOLLYWOOD");
             intent.putExtra("PRICE", "86.80");
             intent.putExtra("PICTURE", R.drawable.blendable_lip_angel);
             startActivity(intent);
 
-        }else if (product_label.equals("MAGIC PINK LIP GLOSS - 5 PCS BUNDLE")){
+        }else if (product_label.equalsIgnoreCase("MAGIC PINK LIP GLOSS - 5 PCS BUNDLE")){
             intent = new Intent(this, ProductDetails.class);
             intent.putExtra("LABEL", "MAGIC PINK LIP GLOSS - 5 PCS BUNDLE");
             intent.putExtra("PRICE", "297.60");
@@ -191,22 +191,22 @@ public class ProductView extends AppCompatActivity {
 
     public void Try(View v){
 
-        if (product_label.equals("RAY-BAN WAYFARER")){
+        if (product_label.equalsIgnoreCase("RAY-BAN WAYFARER")){
             intent = new Intent(this, MainActivity.class);
             intent.putExtra("LABEL", "RAY-BAN WAYFARER");
             intent.putExtra("MODEL", "models/glass.glb");
             startActivity(intent);
 
-        }else if (product_label.equals("BLENDABLE LIP AND CHEEK COLOR")){
+        }else if (product_label.equalsIgnoreCase("BOSE FRAMES")){
             intent = new Intent(this, MainActivity.class);
-            intent.putExtra("LABEL", "BLENDABLE LIP AND CHEEK COLOR");
-            intent.putExtra("MODEL", "models/glass.glb");
+            intent.putExtra("LABEL", "BOSE FRAMES");
+            intent.putExtra("MODEL", "models/glass2.glb");
             startActivity(intent);
 
-        }else if (product_label.equals("BLENDABLE LIP AND CHEEK COLOR ANGEL")){
+        }else if (product_label.equalsIgnoreCase("VINTAGE WIRE ROUND RIM GLASSES")){
             intent = new Intent(this, MainActivity.class);
-            intent.putExtra("LABEL", "BLENDABLE LIP AND CHEEK COLOR ANGEL");
-            intent.putExtra("MODEL", "models/glass.glb");
+            intent.putExtra("LABEL", "VINTAGE WIRE ROUND RIM GLASSES");
+            intent.putExtra("MODEL", "models/glass3.glb");
             startActivity(intent);
 
         }
