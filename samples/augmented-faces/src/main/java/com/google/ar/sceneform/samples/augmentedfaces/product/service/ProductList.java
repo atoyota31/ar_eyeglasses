@@ -91,7 +91,7 @@ public class ProductList {
         double total = 0.0;
 
         for (Product myList : list) {
-            item_purchase += "   " + myList.name + " ("+ myList.quantity +")" + "\n";
+            item_purchase += "   " + myList.name + " ("+ myList.color +")" + " ("+ myList.quantity +")" + "\n";
             total_items += myList.quantity;
             total += myList.total;
         }
