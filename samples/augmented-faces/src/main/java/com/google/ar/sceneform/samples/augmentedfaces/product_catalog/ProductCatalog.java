@@ -138,15 +138,15 @@ public class ProductCatalog extends AppCompatActivity implements PopupMenu.OnMen
     @Override
     public boolean onMenuItemClick(MenuItem menuItem) {
         switch (menuItem.getItemId()){
-            case R.id.item_1:
+//            case R.id.item_1:
 //                intent = new Intent(this, AboutUsActivity.class);
 //                startActivity(intent);
-                return true;
+//                return true;
 
-            case R.id.item_2:
+//            case R.id.item_2:
 //                intent = new Intent(this, ContactUsActivity.class);
 //                startActivity(intent);
-                return true;
+//                return true;
 
             case R.id.item_3:
                 AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
