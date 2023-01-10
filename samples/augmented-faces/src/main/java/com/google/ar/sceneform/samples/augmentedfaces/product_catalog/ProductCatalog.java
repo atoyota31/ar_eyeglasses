@@ -82,7 +82,7 @@ public class ProductCatalog extends AppCompatActivity implements PopupMenu.OnMen
             intent = new Intent(this, ProductView.class);
             intent.putExtra("LABEL", "RAY-BAN WAYFARER");
             intent.putExtra("PRICE", "₱599.99");
-            intent.putExtra("WEIGHT", "Black");
+            intent.putExtra("WEIGHT", "Black/Blue/Green");
             intent.putExtra("DETAILS", "Ray-Ban Wayfarer are the new Retro Wingtip design. This updated classic has glossy black finish and classic blue and green color details. If you love Ray-Ban but need a smaller frame, this is the perfect option for you.");
             intent.putExtra("IMAGE", R.drawable.model_1_black);
             startActivity(intent);
@@ -91,7 +91,7 @@ public class ProductCatalog extends AppCompatActivity implements PopupMenu.OnMen
             intent = new Intent(this, ProductView.class);
             intent.putExtra("LABEL", "BOSE FRAMES");
             intent.putExtra("PRICE", "₱499.99");
-            intent.putExtra("WEIGHT", "Color: Black");
+            intent.putExtra("WEIGHT", "Black/Blue/Green");
             intent.putExtra("DETAILS", "Bose Frames are the new Retro Wingtip design. This updated classic has glossy black finish and classic blue and green color details. If you love Bose Frames but need a smaller frame, this is the perfect option for you.");
             intent.putExtra("IMAGE", R.drawable.model_2_black);
             startActivity(intent);
@@ -100,7 +100,7 @@ public class ProductCatalog extends AppCompatActivity implements PopupMenu.OnMen
             intent = new Intent(this, ProductView.class);
             intent.putExtra("LABEL", "VINTAGE WIRE ROUND RIM GLASSES");
             intent.putExtra("PRICE", "₱799.99");
-            intent.putExtra("WEIGHT", "Color: Gold");
+            intent.putExtra("WEIGHT", "Black/Blue/Green");
             intent.putExtra("DETAILS", "VINTAGE WIRE ROUND RIM GLASSES are the new Retro Wingtip design. This updated classic has glossy black finish and classic blue and green color details. If you love Bose Frames but need a smaller frame, this is the perfect option for you.");
             intent.putExtra("IMAGE", R.drawable.model_3_black);
             startActivity(intent);
@@ -108,8 +108,8 @@ public class ProductCatalog extends AppCompatActivity implements PopupMenu.OnMen
         } else if (v.getId() == R.id.card_4) {
             intent = new Intent(this, ProductView.class);
             intent.putExtra("LABEL", "VERSACE G LONDON");
-            intent.putExtra("PRICE", "₱86.80");
-            intent.putExtra("WEIGHT", "• 2.3g");
+            intent.putExtra("PRICE", "₱886.80");
+            intent.putExtra("WEIGHT", "Black/Blue/Green");
             intent.putExtra("DETAILS", "VERSACE G LONDON are the new Retro Wingtip design. This updated classic has glossy black finish and classic blue and green color details. If you love Bose Frames but need a smaller frame, this is the perfect option for you.");
             intent.putExtra("IMAGE", R.drawable.model_4_black);
             startActivity(intent);
@@ -118,8 +118,8 @@ public class ProductCatalog extends AppCompatActivity implements PopupMenu.OnMen
         } else if (v.getId() == R.id.card_5) {
             intent = new Intent(this, ProductView.class);
             intent.putExtra("LABEL", "ERMENEGILDO ZEGNA");
-            intent.putExtra("PRICE", "₱86.80");
-            intent.putExtra("WEIGHT", "• 2.3g");
+            intent.putExtra("PRICE", "₱756.80");
+            intent.putExtra("WEIGHT", "Black/Blue/Green");
             intent.putExtra("DETAILS", "ERMENEGILDO ZEGNA are the new Retro Wingtip design. This updated classic has glossy black finish and classic blue and green color details. If you love Bose Frames but need a smaller frame, this is the perfect option for you.");
             intent.putExtra("IMAGE", R.drawable.model_5_black);
             startActivity(intent);

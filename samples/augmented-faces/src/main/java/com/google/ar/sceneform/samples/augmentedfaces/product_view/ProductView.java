@@ -105,7 +105,7 @@ public class ProductView extends AppCompatActivity {
             intent = new Intent(this, ProductDetails.class);
             intent.putExtra("LABEL", "BOSE FRAMES");
             intent.putExtra("COLOR", "Black");
-            intent.putExtra("PRICE", "81.40");
+            intent.putExtra("PRICE", "499.99");
             intent.putExtra("PICTURE", R.drawable.model_2_black);
             startActivity(intent);
 
@@ -113,7 +113,7 @@ public class ProductView extends AppCompatActivity {
             intent = new Intent(this, ProductDetails.class);
             intent.putExtra("LABEL", "VINTAGE WIRE ROUND RIM GLASSES");
             intent.putExtra("COLOR", "Black");
-            intent.putExtra("PRICE", "81.40");
+            intent.putExtra("PRICE", "799.99");
             intent.putExtra("PICTURE", R.drawable.model_3_black);
             startActivity(intent);
 
@@ -121,7 +121,7 @@ public class ProductView extends AppCompatActivity {
             intent = new Intent(this, ProductDetails.class);
             intent.putExtra("LABEL", "VERSACE G LONDON");
             intent.putExtra("COLOR", "Black");
-            intent.putExtra("PRICE", "86.80");
+            intent.putExtra("PRICE", "886.80");
             intent.putExtra("PICTURE", R.drawable.model_4_black);
             startActivity(intent);
 
@@ -129,7 +129,7 @@ public class ProductView extends AppCompatActivity {
             intent = new Intent(this, ProductDetails.class);
             intent.putExtra("LABEL", "ERMENEGILDO ZEGNA");
             intent.putExtra("COLOR", "Black");
-            intent.putExtra("PRICE", "86.80");
+            intent.putExtra("PRICE", "756.80");
             intent.putExtra("PICTURE", R.drawable.model_5_black);
             startActivity(intent);
         }
