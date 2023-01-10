@@ -38,7 +38,7 @@ public class ProductDetails extends AppCompatActivity{
     private DecimalFormat df = new DecimalFormat(",###.00");
     //
     private String[] arr_colors = {"Black", "Blue", "Green"};
-    private int[] arr_images = {R.drawable.model_1_black, R.drawable.model_1_blue, R.drawable.model_1_green};
+    private int[] arr_images = {};
     private int current_color = 0;
 
     @Override
@@ -71,6 +71,22 @@ public class ProductDetails extends AppCompatActivity{
             product_price.setText(item_price);
             product_image.setImageResource(item_image);
             price = Double.parseDouble(item_price);
+
+            if(item_name.equalsIgnoreCase("RAY-BAN WAYFARER")){
+                arr_images = new int[]{R.drawable.model_1_black, R.drawable.model_1_blue, R.drawable.model_1_green};
+
+            }else if(item_name.equalsIgnoreCase("BOSE FRAMES")){
+                arr_images = new int[]{R.drawable.model_2_black, R.drawable.model_2_blue, R.drawable.model_2_green};
+
+            }else if(item_name.equalsIgnoreCase("VINTAGE WIRE ROUND RIM GLASSES")){
+                arr_images = new int[]{R.drawable.model_3_black, R.drawable.model_3_blue, R.drawable.model_3_green};
+
+            }else if(item_name.equalsIgnoreCase("VERSACE G LONDON")){
+                arr_images = new int[]{R.drawable.model_4_black, R.drawable.model_4_blue, R.drawable.model_4_green};
+
+            }else if(item_name.equalsIgnoreCase("ERMENEGILDO ZEGNA")){
+                arr_images = new int[]{R.drawable.model_5_black, R.drawable.model_5_blue, R.drawable.model_5_green};
+            }
 
             if(item_color.equalsIgnoreCase("Black")){
                 current_color = 0;

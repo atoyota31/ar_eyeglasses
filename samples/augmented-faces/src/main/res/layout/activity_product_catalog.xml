@@ -110,7 +110,7 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="300dp"
-                            android:src="@drawable/glass2_model" />
+                            android:src="@drawable/model_2_black" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -159,7 +159,7 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="300dp"
-                            android:src="@drawable/model_3" />
+                            android:src="@drawable/model_3_black" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -208,7 +208,7 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="300dp"
-                            android:src="@drawable/model_1" />
+                            android:src="@drawable/model_4_black" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -257,7 +257,7 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="300dp"
-                            android:src="@drawable/model_1" />
+                            android:src="@drawable/model_5_black" />
 
                         <TextView
                             android:layout_width="wrap_content"

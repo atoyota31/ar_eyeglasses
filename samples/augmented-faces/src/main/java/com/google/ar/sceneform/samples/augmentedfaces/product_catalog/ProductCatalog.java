@@ -84,7 +84,7 @@ public class ProductCatalog extends AppCompatActivity implements PopupMenu.OnMen
             intent.putExtra("PRICE", "₱599.99");
             intent.putExtra("WEIGHT", "Black");
             intent.putExtra("DETAILS", "Ray-Ban RB2132 901 Black 52 are the new Retro Wingtip design. This updated classic has glossy black finish and classic blue and green color details. If you love Ray-Ban but need a smaller frame, this is the perfect option for you.");
-            intent.putExtra("IMAGE", R.drawable.model_1);
+            intent.putExtra("IMAGE", R.drawable.model_1_black);
             startActivity(intent);
 
         } else if (v.getId() == R.id.card_2) {
@@ -93,7 +93,7 @@ public class ProductCatalog extends AppCompatActivity implements PopupMenu.OnMen
             intent.putExtra("PRICE", "₱499.99");
             intent.putExtra("WEIGHT", "Color: Black");
             intent.putExtra("DETAILS", "Bose Frames 901 Black are the new Retro Wingtip design. This updated classic has glossy black finish and classic blue and green color details. If you love Bose Frames but need a smaller frame, this is the perfect option for you.");
-            intent.putExtra("IMAGE", R.drawable.glass2_model);
+            intent.putExtra("IMAGE", R.drawable.model_2_black);
             startActivity(intent);
 
         } else if (v.getId() == R.id.card_3) {
@@ -102,7 +102,7 @@ public class ProductCatalog extends AppCompatActivity implements PopupMenu.OnMen
             intent.putExtra("PRICE", "₱799.99");
             intent.putExtra("WEIGHT", "Color: Gold");
             intent.putExtra("DETAILS", "VINTAGE WIRE ROUND RIM GLASSES Gold are the new Retro Wingtip design. This updated classic has glossy black finish and classic blue and green color details. If you love VINTAGE WIRE ROUND RIM GLASSES but need a smaller frame, this is the perfect option for you.");
-            intent.putExtra("IMAGE", R.drawable.model_3);
+            intent.putExtra("IMAGE", R.drawable.model_3_black);
             startActivity(intent);
 
         } else if (v.getId() == R.id.card_4) {
@@ -111,7 +111,7 @@ public class ProductCatalog extends AppCompatActivity implements PopupMenu.OnMen
             intent.putExtra("PRICE", "₱86.80");
             intent.putExtra("WEIGHT", "• 2.3g");
             intent.putExtra("DETAILS", "Sophie Martin Metallic Pro Lipstick has a smooth metallic finish that will keep your lips moisturized all day long. Perfect to complete your glam look!");
-            intent.putExtra("IMAGE", R.drawable.model_1);
+            intent.putExtra("IMAGE", R.drawable.model_4_black);
             startActivity(intent);
 
 
@@ -121,7 +121,7 @@ public class ProductCatalog extends AppCompatActivity implements PopupMenu.OnMen
             intent.putExtra("PRICE", "₱86.80");
             intent.putExtra("WEIGHT", "• 2.3g");
             intent.putExtra("DETAILS", "Sophie Martin Matte Pro Lipstick gives you an attractive matte finish without leaving your lips dry.");
-            intent.putExtra("IMAGE", R.drawable.model_1);
+            intent.putExtra("IMAGE", R.drawable.model_5_black);
             startActivity(intent);
         }
     }
