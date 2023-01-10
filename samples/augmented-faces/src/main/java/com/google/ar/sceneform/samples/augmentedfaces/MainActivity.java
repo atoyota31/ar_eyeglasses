@@ -76,9 +76,13 @@ public class MainActivity extends AppCompatActivity {
                     finish();
                     startActivity(getIntent().putExtra("MODEL", "models/glass_3/blue.glb"));
 
-                }else if(label.equalsIgnoreCase("GLASSES 4")){
+                }else if(label.equalsIgnoreCase("VERSACE G LONDON")){
                     finish();
                     startActivity(getIntent().putExtra("MODEL", "models/glass_4/blue.glb"));
+
+                }else if(label.equalsIgnoreCase("ERMENEGILDO ZEGNA")){
+                    finish();
+                    startActivity(getIntent().putExtra("MODEL", "models/glass_5/blue.glb"));
                 }
             }
         });
@@ -98,9 +102,13 @@ public class MainActivity extends AppCompatActivity {
                     finish();
                     startActivity(getIntent().putExtra("MODEL", "models/glass_3/green.glb"));
 
-                }else if(label.equalsIgnoreCase("GLASSES 4")){
+                }else if(label.equalsIgnoreCase("VERSACE G LONDON")){
                     finish();
                     startActivity(getIntent().putExtra("MODEL", "models/glass_4/green.glb"));
+
+                }else if(label.equalsIgnoreCase("ERMENEGILDO ZEGNA")){
+                    finish();
+                    startActivity(getIntent().putExtra("MODEL", "models/glass_5/green.glb"));
                 }
             }
         });
@@ -120,9 +128,13 @@ public class MainActivity extends AppCompatActivity {
                     finish();
                     startActivity(getIntent().putExtra("MODEL", "models/glass_3/black.glb"));
 
-                }else if(label.equalsIgnoreCase("GLASSES 4")){
+                }else if(label.equalsIgnoreCase("VERSACE G LONDON")){
                     finish();
                     startActivity(getIntent().putExtra("MODEL", "models/glass_4/black.glb"));
+
+                }else if(label.equalsIgnoreCase("ERMENEGILDO ZEGNA")){
+                    finish();
+                    startActivity(getIntent().putExtra("MODEL", "models/glass_5/black.glb"));
                 }
             }
         });

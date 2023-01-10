@@ -98,7 +98,7 @@ public class ProductView extends AppCompatActivity {
             intent.putExtra("LABEL", "RAY-BAN WAYFARER");
             intent.putExtra("COLOR", "Black");
             intent.putExtra("PRICE", "599.99");
-            intent.putExtra("PICTURE", R.drawable.model_1);
+            intent.putExtra("PICTURE", R.drawable.model_1_black);
             startActivity(intent);
 
         }else if (product_label.equalsIgnoreCase("BOSE FRAMES")){
@@ -106,7 +106,7 @@ public class ProductView extends AppCompatActivity {
             intent.putExtra("LABEL", "BOSE FRAMES");
             intent.putExtra("COLOR", "Black");
             intent.putExtra("PRICE", "81.40");
-            intent.putExtra("PICTURE", R.drawable.blendable_lip_angel);
+            intent.putExtra("PICTURE", R.drawable.model_2_black);
             startActivity(intent);
 
         }else if (product_label.equalsIgnoreCase("VINTAGE WIRE ROUND RIM GLASSES")){
@@ -114,7 +114,7 @@ public class ProductView extends AppCompatActivity {
             intent.putExtra("LABEL", "VINTAGE WIRE ROUND RIM GLASSES");
             intent.putExtra("COLOR", "Black");
             intent.putExtra("PRICE", "81.40");
-            intent.putExtra("PICTURE", R.drawable.blendable_lip_angel);
+            intent.putExtra("PICTURE", R.drawable.model_3_black);
             startActivity(intent);
 
         }else if (product_label.equalsIgnoreCase("VERSACE G LONDON")){
@@ -122,7 +122,7 @@ public class ProductView extends AppCompatActivity {
             intent.putExtra("LABEL", "VERSACE G LONDON");
             intent.putExtra("COLOR", "Black");
             intent.putExtra("PRICE", "86.80");
-            intent.putExtra("PICTURE", R.drawable.blendable_lip_angel);
+            intent.putExtra("PICTURE", R.drawable.model_4_black);
             startActivity(intent);
 
         }else if (product_label.equalsIgnoreCase("ERMENEGILDO ZEGNA")){
@@ -130,7 +130,7 @@ public class ProductView extends AppCompatActivity {
             intent.putExtra("LABEL", "ERMENEGILDO ZEGNA");
             intent.putExtra("COLOR", "Black");
             intent.putExtra("PRICE", "86.80");
-            intent.putExtra("PICTURE", R.drawable.blendable_lip_angel);
+            intent.putExtra("PICTURE", R.drawable.model_5_black);
             startActivity(intent);
         }
 
@@ -165,7 +165,7 @@ public class ProductView extends AppCompatActivity {
         }else if (product_label.equalsIgnoreCase("ERMENEGILDO ZEGNA")){
             intent = new Intent(this, MainActivity.class);
             intent.putExtra("LABEL", "ERMENEGILDO ZEGNA");
-            intent.putExtra("MODEL", "models/glass_4/black.glb");
+            intent.putExtra("MODEL", "models/glass_5/black.glb");
             startActivity(intent);
 
         }
