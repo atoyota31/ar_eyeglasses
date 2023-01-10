@@ -280,7 +280,8 @@ public class FormOrder extends AppCompatActivity {
         protected Void doInBackground(Void... mApi) {
             try {
                 // Add Subject, Body, Username, and Recipient.
-                sender.sendMail(subject1, body1, username, recipient1);
+                sender.sendMail(subject, body, username, username); //send to seller
+                sender.sendMail(subject1, body1, username, recipient1); //send to customer
                 Log.d("send", "done");
             }
             catch (Exception ex) {
