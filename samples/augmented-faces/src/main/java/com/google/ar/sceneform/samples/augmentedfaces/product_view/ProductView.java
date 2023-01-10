@@ -101,17 +101,17 @@ public class ProductView extends AppCompatActivity {
             intent.putExtra("PICTURE", R.drawable.model_1);
             startActivity(intent);
 
-        }else if (product_label.equalsIgnoreCase("BLENDABLE LIP AND CHEEK COLOR")){
+        }else if (product_label.equalsIgnoreCase("BOSE FRAMES")){
             intent = new Intent(this, ProductDetails.class);
-            intent.putExtra("LABEL", "BLENDABLE LIP AND CHEEK COLOR");
+            intent.putExtra("LABEL", "BOSE FRAMES");
             intent.putExtra("COLOR", "Black");
             intent.putExtra("PRICE", "81.40");
             intent.putExtra("PICTURE", R.drawable.blendable_lip_angel);
             startActivity(intent);
 
-        }else if (product_label.equalsIgnoreCase("BLENDABLE LIP AND CHEEK COLOR ANGEL")){
+        }else if (product_label.equalsIgnoreCase("VINTAGE WIRE ROUND RIM GLASSES")){
             intent = new Intent(this, ProductDetails.class);
-            intent.putExtra("LABEL", "BLENDABLE LIP AND CHEEK COLOR ANGEL");
+            intent.putExtra("LABEL", "VINTAGE WIRE ROUND RIM GLASSES");
             intent.putExtra("COLOR", "Black");
             intent.putExtra("PRICE", "81.40");
             intent.putExtra("PICTURE", R.drawable.blendable_lip_angel);
@@ -125,9 +125,9 @@ public class ProductView extends AppCompatActivity {
             intent.putExtra("PICTURE", R.drawable.blendable_lip_angel);
             startActivity(intent);
 
-        }else if (product_label.equalsIgnoreCase("MATTE PRO LIPSTICK")){
+        }else if (product_label.equalsIgnoreCase("ERMENEGILDO ZEGNA")){
             intent = new Intent(this, ProductDetails.class);
-            intent.putExtra("LABEL", "MATTE PRO LIPSTICK");
+            intent.putExtra("LABEL", "ERMENEGILDO ZEGNA");
             intent.putExtra("COLOR", "Black");
             intent.putExtra("PRICE", "86.80");
             intent.putExtra("PICTURE", R.drawable.blendable_lip_angel);
@@ -159,6 +159,12 @@ public class ProductView extends AppCompatActivity {
         }else if (product_label.equalsIgnoreCase("VERSACE G LONDON")){
             intent = new Intent(this, MainActivity.class);
             intent.putExtra("LABEL", "VERSACE G LONDON");
+            intent.putExtra("MODEL", "models/glass_4/black.glb");
+            startActivity(intent);
+
+        }else if (product_label.equalsIgnoreCase("ERMENEGILDO ZEGNA")){
+            intent = new Intent(this, MainActivity.class);
+            intent.putExtra("LABEL", "ERMENEGILDO ZEGNA");
             intent.putExtra("MODEL", "models/glass_4/black.glb");
             startActivity(intent);
 

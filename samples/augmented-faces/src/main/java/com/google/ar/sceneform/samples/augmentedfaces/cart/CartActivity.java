@@ -136,7 +136,7 @@ public class CartActivity extends AppCompatActivity {
                             intent.putExtra("TOTAL", myList.total);
                             startActivity(intent);
 
-                        }else if (myList.name.equals("BLENDABLE LIP AND CHEEK COLOR")){
+                        }else if (myList.name.equals("BOSE FRAMES")){
                             Intent intent = new Intent(CartActivity.this, CartItemActivity.class);
                             if(myList.color.equalsIgnoreCase("Black")){
                                 intent.putExtra("PICTURE", R.drawable.model_1_black);
@@ -152,7 +152,7 @@ public class CartActivity extends AppCompatActivity {
                             intent.putExtra("TOTAL", myList.total);
                             startActivity(intent);
 
-                        }else if (myList.name.equals("BLENDABLE LIP AND CHEEK COLOR ANGEL")){
+                        }else if (myList.name.equals("VINTAGE WIRE ROUND RIM GLASSES")){
                             Intent intent = new Intent(CartActivity.this, CartItemActivity.class);
                             if(myList.color.equalsIgnoreCase("Black")){
                                 intent.putExtra("PICTURE", R.drawable.model_1_black);
@@ -184,7 +184,7 @@ public class CartActivity extends AppCompatActivity {
                             intent.putExtra("TOTAL", myList.total);
                             startActivity(intent);
 
-                        }else if (myList.name.equals("MATTE PRO LIPSTICK")){
+                        }else if (myList.name.equals("ERMENEGILDO ZEGNA")){
                             Intent intent = new Intent(CartActivity.this, CartItemActivity.class);
                             if(myList.color.equalsIgnoreCase("Black")){
                                 intent.putExtra("PICTURE", R.drawable.model_1_black);

@@ -272,7 +272,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="sans-serif-condensed-light"
-                            android:text="MATTE PRO LIPSTICK"
+                            android:text="ERMENEGILDO ZEGNA"
                             android:textColor="@color/black"
                             android:textSize="30dp" />
 

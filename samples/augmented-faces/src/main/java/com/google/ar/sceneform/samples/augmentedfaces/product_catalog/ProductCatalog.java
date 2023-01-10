@@ -117,7 +117,7 @@ public class ProductCatalog extends AppCompatActivity implements PopupMenu.OnMen
 
         } else if (v.getId() == R.id.card_5) {
             intent = new Intent(this, ProductView.class);
-            intent.putExtra("LABEL", "MATTE PRO LIPSTICK");
+            intent.putExtra("LABEL", "ERMENEGILDO ZEGNA");
             intent.putExtra("PRICE", "₱86.80");
             intent.putExtra("WEIGHT", "• 2.3g");
             intent.putExtra("DETAILS", "Sophie Martin Matte Pro Lipstick gives you an attractive matte finish without leaving your lips dry.");

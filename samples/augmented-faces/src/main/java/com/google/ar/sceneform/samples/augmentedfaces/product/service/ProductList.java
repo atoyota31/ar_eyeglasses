@@ -125,7 +125,7 @@ public class ProductList {
                 listView.put("total", "Total: ₱" + df.format(myList.total));
                 CartActivity.mySimpleList.add(listView);
 
-            }else if (myList.name.equals("BLENDABLE LIP AND CHEEK COLOR")){
+            }else if (myList.name.equals("BOSE FRAMES")){
                 Map<String, Object> listView = new HashMap<>();
                 if(myList.color.equalsIgnoreCase("Black")){
                     listView.put("photo", R.drawable.model_1_black);
@@ -145,7 +145,7 @@ public class ProductList {
                 listView.put("total", "Total: ₱" + df.format(myList.total));
                 CartActivity.mySimpleList.add(listView);
 
-            }else if (myList.name.equals("BLENDABLE LIP AND CHEEK COLOR ANGEL")){
+            }else if (myList.name.equals("VINTAGE WIRE ROUND RIM GLASSES")){
                 Map<String, Object> listView = new HashMap<>();
                 if(myList.color.equalsIgnoreCase("Black")){
                     listView.put("photo", R.drawable.model_1_black);
@@ -185,7 +185,7 @@ public class ProductList {
                 listView.put("total", "Total: ₱" + df.format(myList.total));
                 CartActivity.mySimpleList.add(listView);
 
-            }else if (myList.name.equals("MATTE PRO LIPSTICK")){
+            }else if (myList.name.equals("ERMENEGILDO ZEGNA")){
                 Map<String, Object> listView = new HashMap<>();
                 if(myList.color.equalsIgnoreCase("Black")){
                     listView.put("photo", R.drawable.model_1_black);
