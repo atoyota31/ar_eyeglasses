@@ -122,7 +122,6 @@ public class CartActivity extends AppCompatActivity {
 
                         if (myList.name.equals("RAY-BAN WAYFARER")){
                             Intent intent = new Intent(CartActivity.this, CartItemActivity.class);
-
                             if(myList.color.equalsIgnoreCase("Black")){
                                 intent.putExtra("PICTURE", R.drawable.model_1_black);
                             }else if(myList.color.equalsIgnoreCase("Blue")){
@@ -130,7 +129,6 @@ public class CartActivity extends AppCompatActivity {
                             }else if(myList.color.equalsIgnoreCase("Green")) {
                                 intent.putExtra("PICTURE", R.drawable.model_1_green);
                             }
-
                             intent.putExtra("NAME", myList.name);
                             intent.putExtra("PRICE", myList.price);
                             intent.putExtra("COLOR", myList.color);
@@ -140,108 +138,64 @@ public class CartActivity extends AppCompatActivity {
 
                         }else if (myList.name.equals("BLENDABLE LIP AND CHEEK COLOR")){
                             Intent intent = new Intent(CartActivity.this, CartItemActivity.class);
-                            intent.putExtra("PICTURE", R.drawable.blendable_lip_angel);
+                            if(myList.color.equalsIgnoreCase("Black")){
+                                intent.putExtra("PICTURE", R.drawable.model_1_black);
+                            }else if(myList.color.equalsIgnoreCase("Blue")){
+                                intent.putExtra("PICTURE", R.drawable.model_1_blue);
+                            }else if(myList.color.equalsIgnoreCase("Green")) {
+                                intent.putExtra("PICTURE", R.drawable.model_1_green);
+                            }
                             intent.putExtra("NAME", myList.name);
                             intent.putExtra("PRICE", myList.price);
+                            intent.putExtra("COLOR", myList.color);
                             intent.putExtra("QUANTITY", myList.quantity);
                             intent.putExtra("TOTAL", myList.total);
                             startActivity(intent);
 
                         }else if (myList.name.equals("BLENDABLE LIP AND CHEEK COLOR ANGEL")){
                             Intent intent = new Intent(CartActivity.this, CartItemActivity.class);
-                            intent.putExtra("PICTURE", R.drawable.blendable_lip_angel);
+                            if(myList.color.equalsIgnoreCase("Black")){
+                                intent.putExtra("PICTURE", R.drawable.model_1_black);
+                            }else if(myList.color.equalsIgnoreCase("Blue")){
+                                intent.putExtra("PICTURE", R.drawable.model_1_blue);
+                            }else if(myList.color.equalsIgnoreCase("Green")) {
+                                intent.putExtra("PICTURE", R.drawable.model_1_green);
+                            }
                             intent.putExtra("NAME", myList.name);
                             intent.putExtra("PRICE", myList.price);
+                            intent.putExtra("COLOR", myList.color);
                             intent.putExtra("QUANTITY", myList.quantity);
                             intent.putExtra("TOTAL", myList.total);
                             startActivity(intent);
 
-                        }else if (myList.name.equals("METALLIC PRO LIPSTICK")){
+                        }else if (myList.name.equals("VERSACE G LONDON")){
                             Intent intent = new Intent(CartActivity.this, CartItemActivity.class);
-                            intent.putExtra("PICTURE", R.drawable.blendable_lip_angel);
+                            if(myList.color.equalsIgnoreCase("Black")){
+                                intent.putExtra("PICTURE", R.drawable.model_1_black);
+                            }else if(myList.color.equalsIgnoreCase("Blue")){
+                                intent.putExtra("PICTURE", R.drawable.model_1_blue);
+                            }else if(myList.color.equalsIgnoreCase("Green")) {
+                                intent.putExtra("PICTURE", R.drawable.model_1_green);
+                            }
                             intent.putExtra("NAME", myList.name);
                             intent.putExtra("PRICE", myList.price);
+                            intent.putExtra("COLOR", myList.color);
                             intent.putExtra("QUANTITY", myList.quantity);
                             intent.putExtra("TOTAL", myList.total);
                             startActivity(intent);
 
                         }else if (myList.name.equals("MATTE PRO LIPSTICK")){
                             Intent intent = new Intent(CartActivity.this, CartItemActivity.class);
-                            intent.putExtra("PICTURE", R.drawable.blendable_lip_angel);
+                            if(myList.color.equalsIgnoreCase("Black")){
+                                intent.putExtra("PICTURE", R.drawable.model_1_black);
+                            }else if(myList.color.equalsIgnoreCase("Blue")){
+                                intent.putExtra("PICTURE", R.drawable.model_1_blue);
+                            }else if(myList.color.equalsIgnoreCase("Green")) {
+                                intent.putExtra("PICTURE", R.drawable.model_1_green);
+                            }
                             intent.putExtra("NAME", myList.name);
                             intent.putExtra("PRICE", myList.price);
-                            intent.putExtra("QUANTITY", myList.quantity);
-                            intent.putExtra("TOTAL", myList.total);
-                            startActivity(intent);
-
-                        }else if (myList.name.equals("MATTE PRO LIPSTICK BLITZ")){
-                            Intent intent = new Intent(CartActivity.this, CartItemActivity.class);
-                            intent.putExtra("PICTURE", R.drawable.blendable_lip_angel);
-                            intent.putExtra("NAME", myList.name);
-                            intent.putExtra("PRICE", myList.price);
-                            intent.putExtra("QUANTITY", myList.quantity);
-                            intent.putExtra("TOTAL", myList.total);
-                            startActivity(intent);
-
-                        }else if (myList.name.equals("LIP GLOSS")){
-                            Intent intent = new Intent(CartActivity.this, CartItemActivity.class);
-                            intent.putExtra("PICTURE", R.drawable.blendable_lip_angel);
-                            intent.putExtra("NAME", myList.name);
-                            intent.putExtra("PRICE", myList.price);
-                            intent.putExtra("QUANTITY", myList.quantity);
-                            intent.putExtra("TOTAL", myList.total);
-                            startActivity(intent);
-
-                        }else if (myList.name.equals("LIP CHEEK EYE COLOR")){
-                            Intent intent = new Intent(CartActivity.this, CartItemActivity.class);
-                            intent.putExtra("PICTURE", R.drawable.blendable_lip_angel);
-                            intent.putExtra("NAME", myList.name);
-                            intent.putExtra("PRICE", myList.price);
-                            intent.putExtra("QUANTITY", myList.quantity);
-                            intent.putExtra("TOTAL", myList.total);
-                            startActivity(intent);
-
-                        }else if (myList.name.equals("LONG LASTING METALLIC LIP COLOR")){
-                            Intent intent = new Intent(CartActivity.this, CartItemActivity.class);
-                            intent.putExtra("PICTURE", R.drawable.blendable_lip_angel);
-                            intent.putExtra("NAME", myList.name);
-                            intent.putExtra("PRICE", myList.price);
-                            intent.putExtra("QUANTITY", myList.quantity);
-                            intent.putExtra("TOTAL", myList.total);
-                            startActivity(intent);
-
-                        }else if (myList.name.equals("LONG LASTING LIP COLOR")){
-                            Intent intent = new Intent(CartActivity.this, CartItemActivity.class);
-                            intent.putExtra("PICTURE", R.drawable.blendable_lip_angel);
-                            intent.putExtra("NAME", myList.name);
-                            intent.putExtra("PRICE", myList.price);
-                            intent.putExtra("QUANTITY", myList.quantity);
-                            intent.putExtra("TOTAL", myList.total);
-                            startActivity(intent);
-
-                        }else if (myList.name.equals("CLASSIQUE LIPSTICK")){
-                            Intent intent = new Intent(CartActivity.this, CartItemActivity.class);
-                            intent.putExtra("PICTURE", R.drawable.blendable_lip_angel);
-                            intent.putExtra("NAME", myList.name);
-                            intent.putExtra("PRICE", myList.price);
-                            intent.putExtra("QUANTITY", myList.quantity);
-                            intent.putExtra("TOTAL", myList.total);
-                            startActivity(intent);
-
-                        }else if (myList.name.equals("METALLIC PRO LIPSTICK HOLLYWOOD")){
-                            Intent intent = new Intent(CartActivity.this, CartItemActivity.class);
-                            intent.putExtra("PICTURE", R.drawable.blendable_lip_angel);
-                            intent.putExtra("NAME", myList.name);
-                            intent.putExtra("PRICE", myList.price);
-                            intent.putExtra("QUANTITY", myList.quantity);
-                            intent.putExtra("TOTAL", myList.total);
-                            startActivity(intent);
-
-                        }else if (myList.name.equals("MAGIC PINK LIP GLOSS - 5 PCS BUNDLE")){
-                            Intent intent = new Intent(CartActivity.this, CartItemActivity.class);
-                            intent.putExtra("PICTURE", R.drawable.blendable_lip_angel);
-                            intent.putExtra("NAME", myList.name);
-                            intent.putExtra("PRICE", myList.price);
+                            intent.putExtra("COLOR", myList.color);
                             intent.putExtra("QUANTITY", myList.quantity);
                             intent.putExtra("TOTAL", myList.total);
                             startActivity(intent);

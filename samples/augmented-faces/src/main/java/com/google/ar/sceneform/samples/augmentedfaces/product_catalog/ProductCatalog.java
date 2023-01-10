@@ -107,7 +107,7 @@ public class ProductCatalog extends AppCompatActivity implements PopupMenu.OnMen
 
         } else if (v.getId() == R.id.card_4) {
             intent = new Intent(this, ProductView.class);
-            intent.putExtra("LABEL", "GLASSES 4");
+            intent.putExtra("LABEL", "VERSACE G LONDON");
             intent.putExtra("PRICE", "₱86.80");
             intent.putExtra("WEIGHT", "• 2.3g");
             intent.putExtra("DETAILS", "Sophie Martin Metallic Pro Lipstick has a smooth metallic finish that will keep your lips moisturized all day long. Perfect to complete your glam look!");

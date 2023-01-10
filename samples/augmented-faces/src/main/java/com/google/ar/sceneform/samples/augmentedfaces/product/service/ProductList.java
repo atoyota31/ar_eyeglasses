@@ -126,10 +126,17 @@ public class ProductList {
                 CartActivity.mySimpleList.add(listView);
 
             }else if (myList.name.equals("BLENDABLE LIP AND CHEEK COLOR")){
-                Map <String, Object> listView = new HashMap<>();
-                listView.put("photo", R.drawable.blendable_lip_angel);
-                listView.put("name", "Name: " +myList.name);
-                listView.put("price","Price: ₱" + myList.price);
+                Map<String, Object> listView = new HashMap<>();
+                if(myList.color.equalsIgnoreCase("Black")){
+                    listView.put("photo", R.drawable.model_1_black);
+                }else if(myList.color.equalsIgnoreCase("Blue")){
+                    listView.put("photo", R.drawable.model_1_blue);
+                }else if(myList.color.equalsIgnoreCase("Green")) {
+                    listView.put("photo", R.drawable.model_1_green);
+                }
+                listView.put("name", "Name: " + myList.name);
+                listView.put("price", "Price: ₱" +myList.price);
+                listView.put("color", "Color: " +myList.color);
                 if (myList.quantity>1){
                     listView.put("quantity", "Quantity: " +myList.quantity+"pcs");
                 }else{
@@ -139,23 +146,37 @@ public class ProductList {
                 CartActivity.mySimpleList.add(listView);
 
             }else if (myList.name.equals("BLENDABLE LIP AND CHEEK COLOR ANGEL")){
-                Map <String, Object> listView = new HashMap<>();
-                listView.put("photo", R.drawable.blendable_lip_angel);
-                listView.put("name", "Name: " +myList.name);
+                Map<String, Object> listView = new HashMap<>();
+                if(myList.color.equalsIgnoreCase("Black")){
+                    listView.put("photo", R.drawable.model_1_black);
+                }else if(myList.color.equalsIgnoreCase("Blue")){
+                    listView.put("photo", R.drawable.model_1_blue);
+                }else if(myList.color.equalsIgnoreCase("Green")) {
+                    listView.put("photo", R.drawable.model_1_green);
+                }
+                listView.put("name", "Name: " + myList.name);
                 listView.put("price", "Price: ₱" +myList.price);
+                listView.put("color", "Color: " +myList.color);
                 if (myList.quantity>1){
                     listView.put("quantity", "Quantity: " +myList.quantity+"pcs");
                 }else{
                     listView.put("quantity", "Quantity: " +myList.quantity+"pc");
                 }
-                listView.put("total","Total: ₱" + df.format(myList.total));
+                listView.put("total", "Total: ₱" + df.format(myList.total));
                 CartActivity.mySimpleList.add(listView);
 
-            }else if (myList.name.equals("METALLIC PRO LIPSTICK")){
-                Map <String, Object> listView = new HashMap<>();
-                listView.put("photo", R.drawable.blendable_lip_angel);
-                listView.put("name", "Name: " +myList.name);
-                listView.put("price","Price: ₱" + myList.price);
+            }else if (myList.name.equals("VERSACE G LONDON")){
+                Map<String, Object> listView = new HashMap<>();
+                if(myList.color.equalsIgnoreCase("Black")){
+                    listView.put("photo", R.drawable.model_1_black);
+                }else if(myList.color.equalsIgnoreCase("Blue")){
+                    listView.put("photo", R.drawable.model_1_blue);
+                }else if(myList.color.equalsIgnoreCase("Green")) {
+                    listView.put("photo", R.drawable.model_1_green);
+                }
+                listView.put("name", "Name: " + myList.name);
+                listView.put("price", "Price: ₱" +myList.price);
+                listView.put("color", "Color: " +myList.color);
                 if (myList.quantity>1){
                     listView.put("quantity", "Quantity: " +myList.quantity+"pcs");
                 }else{
@@ -165,120 +186,23 @@ public class ProductList {
                 CartActivity.mySimpleList.add(listView);
 
             }else if (myList.name.equals("MATTE PRO LIPSTICK")){
-                Map <String, Object> listView = new HashMap<>();
-                listView.put("photo", R.drawable.blendable_lip_angel);
-                listView.put("name", "Name: " +myList.name);
+                Map<String, Object> listView = new HashMap<>();
+                if(myList.color.equalsIgnoreCase("Black")){
+                    listView.put("photo", R.drawable.model_1_black);
+                }else if(myList.color.equalsIgnoreCase("Blue")){
+                    listView.put("photo", R.drawable.model_1_blue);
+                }else if(myList.color.equalsIgnoreCase("Green")) {
+                    listView.put("photo", R.drawable.model_1_green);
+                }
+                listView.put("name", "Name: " + myList.name);
                 listView.put("price", "Price: ₱" +myList.price);
+                listView.put("color", "Color: " +myList.color);
                 if (myList.quantity>1){
                     listView.put("quantity", "Quantity: " +myList.quantity+"pcs");
                 }else{
                     listView.put("quantity", "Quantity: " +myList.quantity+"pc");
                 }
                 listView.put("total", "Total: ₱" + df.format(myList.total));
-                CartActivity.mySimpleList.add(listView);
-
-            }else if (myList.name.equals("MATTE PRO LIPSTICK BLITZ")){
-                Map <String, Object> listView = new HashMap<>();
-                listView.put("photo", R.drawable.blendable_lip_angel);
-                listView.put("name", "Name: " +myList.name);
-                listView.put("price", "Price: ₱" +myList.price);
-                if (myList.quantity>1){
-                    listView.put("quantity", "Quantity: " +myList.quantity+"pcs");
-                }else{
-                    listView.put("quantity", "Quantity: " +myList.quantity+"pc");
-                }
-                listView.put("total","Total: ₱" + df.format(myList.total));
-                CartActivity.mySimpleList.add(listView);
-
-            }else if (myList.name.equals("LIP GLOSS")){
-                Map <String, Object> listView = new HashMap<>();
-                listView.put("photo", R.drawable.blendable_lip_angel);
-                listView.put("name", "Name: " +myList.name);
-                listView.put("price", "Price: ₱" +myList.price);
-                if (myList.quantity>1){
-                    listView.put("quantity", "Quantity: " +myList.quantity+"pcs");
-                }else{
-                    listView.put("quantity", "Quantity: " +myList.quantity+"pc");
-                }
-                listView.put("total","Total: ₱" + df.format(myList.total));
-                CartActivity.mySimpleList.add(listView);
-
-            }else if (myList.name.equals("LIP CHEEK EYE COLOR")){
-                Map <String, Object> listView = new HashMap<>();
-                listView.put("photo", R.drawable.blendable_lip_angel);
-                listView.put("name", "Name: " +myList.name);
-                listView.put("price", "Price: ₱" +myList.price);
-                if (myList.quantity>1){
-                    listView.put("quantity", "Quantity: " +myList.quantity+"pcs");
-                }else{
-                    listView.put("quantity", "Quantity: " +myList.quantity+"pc");
-                }
-                listView.put("total","Total: ₱" + df.format(myList.total));
-                CartActivity.mySimpleList.add(listView);
-
-            }else if (myList.name.equals("LONG LASTING METALLIC LIP COLOR")){
-                Map <String, Object> listView = new HashMap<>();
-                listView.put("photo", R.drawable.blendable_lip_angel);
-                listView.put("name", "Name: " +myList.name);
-                listView.put("price", "Price: ₱" +myList.price);
-                if (myList.quantity>1){
-                    listView.put("quantity", "Quantity: " +myList.quantity+"pcs");
-                }else{
-                    listView.put("quantity", "Quantity: " +myList.quantity+"pc");
-                }
-                listView.put("total","Total: ₱" + df.format(myList.total));
-                CartActivity.mySimpleList.add(listView);
-
-            }else if (myList.name.equals("LONG LASTING LIP COLOR")){
-                Map <String, Object> listView = new HashMap<>();
-                listView.put("photo", R.drawable.blendable_lip_angel);
-                listView.put("name", "Name: " +myList.name);
-                listView.put("price", "Price: ₱" +myList.price);
-                if (myList.quantity>1){
-                    listView.put("quantity", "Quantity: " +myList.quantity+"pcs");
-                }else{
-                    listView.put("quantity", "Quantity: " +myList.quantity+"pc");
-                }
-                listView.put("total","Total: ₱" + df.format(myList.total));
-                CartActivity.mySimpleList.add(listView);
-
-            }else if (myList.name.equals("CLASSIQUE LIPSTICK")){
-                Map <String, Object> listView = new HashMap<>();
-                listView.put("photo", R.drawable.blendable_lip_angel);
-                listView.put("name", "Name: " +myList.name);
-                listView.put("price", "Price: ₱" +myList.price);
-                if (myList.quantity>1){
-                    listView.put("quantity", "Quantity: " +myList.quantity+"pcs");
-                }else{
-                    listView.put("quantity", "Quantity: " +myList.quantity+"pc");
-                }
-                listView.put("total","Total: ₱" + df.format(myList.total));
-                CartActivity.mySimpleList.add(listView);
-
-            }else if (myList.name.equals("METALLIC PRO LIPSTICK HOLLYWOOD")){
-                Map <String, Object> listView = new HashMap<>();
-                listView.put("photo", R.drawable.blendable_lip_angel);
-                listView.put("name", "Name: " +myList.name);
-                listView.put("price", "Price: ₱" +myList.price);
-                if (myList.quantity>1){
-                    listView.put("quantity", "Quantity: " +myList.quantity+"pcs");
-                }else{
-                    listView.put("quantity", "Quantity: " +myList.quantity+"pc");
-                }
-                listView.put("total","Total: ₱" + df.format(myList.total));
-                CartActivity.mySimpleList.add(listView);
-
-            }else if (myList.name.equals("MAGIC PINK LIP GLOSS - 5 PCS BUNDLE")){
-                Map <String, Object> listView = new HashMap<>();
-                listView.put("photo", R.drawable.blendable_lip_angel);
-                listView.put("name", "Name: " +myList.name);
-                listView.put("price", "Price: ₱" +myList.price);
-                if (myList.quantity>1){
-                    listView.put("quantity", "Quantity: " +myList.quantity+"pcs");
-                }else{
-                    listView.put("quantity", "Quantity: " +myList.quantity+"pc");
-                }
-                listView.put("total","Total: ₱" + df.format(myList.total));
                 CartActivity.mySimpleList.add(listView);
 
             }
