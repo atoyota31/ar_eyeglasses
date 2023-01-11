@@ -128,11 +128,11 @@ public class ProductList {
             }else if (myList.name.equals("BOSE FRAMES")){
                 Map<String, Object> listView = new HashMap<>();
                 if(myList.color.equalsIgnoreCase("Black")){
-                    listView.put("photo", R.drawable.model_1_black);
+                    listView.put("photo", R.drawable.model_2_black);
                 }else if(myList.color.equalsIgnoreCase("Blue")){
-                    listView.put("photo", R.drawable.model_1_blue);
+                    listView.put("photo", R.drawable.model_2_blue);
                 }else if(myList.color.equalsIgnoreCase("Green")) {
-                    listView.put("photo", R.drawable.model_1_green);
+                    listView.put("photo", R.drawable.model_2_green);
                 }
                 listView.put("name", "Name: " + myList.name);
                 listView.put("price", "Price: ₱" +myList.price);
@@ -148,11 +148,11 @@ public class ProductList {
             }else if (myList.name.equals("VINTAGE WIRE ROUND RIM GLASSES")){
                 Map<String, Object> listView = new HashMap<>();
                 if(myList.color.equalsIgnoreCase("Black")){
-                    listView.put("photo", R.drawable.model_1_black);
+                    listView.put("photo", R.drawable.model_3_black);
                 }else if(myList.color.equalsIgnoreCase("Blue")){
-                    listView.put("photo", R.drawable.model_1_blue);
+                    listView.put("photo", R.drawable.model_3_blue);
                 }else if(myList.color.equalsIgnoreCase("Green")) {
-                    listView.put("photo", R.drawable.model_1_green);
+                    listView.put("photo", R.drawable.model_3_green);
                 }
                 listView.put("name", "Name: " + myList.name);
                 listView.put("price", "Price: ₱" +myList.price);
@@ -168,11 +168,11 @@ public class ProductList {
             }else if (myList.name.equals("VERSACE G LONDON")){
                 Map<String, Object> listView = new HashMap<>();
                 if(myList.color.equalsIgnoreCase("Black")){
-                    listView.put("photo", R.drawable.model_1_black);
+                    listView.put("photo", R.drawable.model_4_black);
                 }else if(myList.color.equalsIgnoreCase("Blue")){
-                    listView.put("photo", R.drawable.model_1_blue);
+                    listView.put("photo", R.drawable.model_4_blue);
                 }else if(myList.color.equalsIgnoreCase("Green")) {
-                    listView.put("photo", R.drawable.model_1_green);
+                    listView.put("photo", R.drawable.model_4_green);
                 }
                 listView.put("name", "Name: " + myList.name);
                 listView.put("price", "Price: ₱" +myList.price);
@@ -188,11 +188,11 @@ public class ProductList {
             }else if (myList.name.equals("ERMENEGILDO ZEGNA")){
                 Map<String, Object> listView = new HashMap<>();
                 if(myList.color.equalsIgnoreCase("Black")){
-                    listView.put("photo", R.drawable.model_1_black);
+                    listView.put("photo", R.drawable.model_5_black);
                 }else if(myList.color.equalsIgnoreCase("Blue")){
-                    listView.put("photo", R.drawable.model_1_blue);
+                    listView.put("photo", R.drawable.model_5_blue);
                 }else if(myList.color.equalsIgnoreCase("Green")) {
-                    listView.put("photo", R.drawable.model_1_green);
+                    listView.put("photo", R.drawable.model_5_green);
                 }
                 listView.put("name", "Name: " + myList.name);
                 listView.put("price", "Price: ₱" +myList.price);
